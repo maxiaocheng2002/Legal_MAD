@@ -1,0 +1,14 @@
+{
+    "IRAC_CoT": {
+        "experiment_name": "IRAC_CoT",
+        "total_questions": 300,
+        "correct_answers": 55,
+        "accuracy": "18.33%"
+    },
+    "Basic_CoT": {
+        "experiment_name": "Basic_CoT",
+        "total_questions": 300,
+        "correct_answers": 63,
+        "accuracy": "21.00%"
+    }
+}

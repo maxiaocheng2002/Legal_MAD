@@ -20,7 +20,7 @@ class GroqClient:
         api_key: Optional[str] = None,
         model: str = "llama-3.1-8b-instant",
         temperature: float = 0.0,
-        max_tokens: int = 500,
+        max_tokens: int = 500,  # Experimental version uses higher token limit
         max_retries: int = 5,
         retry_delay: float = 2.0
     ):
