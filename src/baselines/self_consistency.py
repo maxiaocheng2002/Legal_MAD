@@ -36,7 +36,7 @@ class SelfConsistencyBaseline:
             # IMPORTANT: must be a REAL Groq chat model (NOT prompt-guard)
             self.client = GroqClient(
                 api_key=api_key,
-                model=model or "openai/gpt-oss-120b",
+                model=model or "llama-3.3-70b-versatile",
             )
 
     # -------------------------------------------------------
