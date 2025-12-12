@@ -2,7 +2,7 @@
 Debater agent for MAD system.
 """
 
-from typing import Dict, Optional
+from typing import Dict, Optional, Callable
 from src.utils.api_client_experimental import GroqClient, OpenRouterClient
 from src.agents.prompts_experimental import get_debater_opening_prompt, get_debater_rebuttal_prompt
 
@@ -22,6 +22,39 @@ class Debater:
         self.name = name
         self.position = None
         self.opening_argument = None
+
+    def _generate_with_validation(
+        self,
+        prompt: str,
+        max_tokens: int,
+        validator: Callable[[Dict], bool],
+        retry_instruction: str,
+        error_message: str
+    ) -> Dict:
+        """
+        Generate JSON response with structural validation and limited retries.
+        """
+        attempt_prompt = prompt
+        last_exception = None
+        last_response = None
+
+        for _ in range(3):
+            try:
+                response = self.client.generate_json(attempt_prompt, max_tokens=max_tokens)
+            except Exception as exc:
+                last_exception = exc
+                continue
+
+            last_response = response
+            if validator(response):
+                return response
+
+            attempt_prompt = f"{prompt}\n\n{retry_instruction}"
+
+        if last_exception:
+            raise last_exception
+
+        raise ValueError(f"{error_message}: {last_response}")
 
     def generate_opening(
         self,
@@ -216,11 +249,31 @@ class Debater:
             is_adversarial=False  # Always neutral in this method
         )
 
-        response = self.client.generate_json(prompt, max_tokens=2000)
+        def _valid_irac_response(resp: Dict) -> bool:
+            if not isinstance(resp, dict):
+                return False
+            irac = resp.get('irac')
+            if not isinstance(irac, dict):
+                return False
+            for key in ['issue', 'rule', 'application', 'conclusion']:
+                value = irac.get(key)
+                if not isinstance(value, str) or not value.strip():
+                    return False
+            full_answer = resp.get('full_answer')
+            if not isinstance(full_answer, str) or not full_answer.strip():
+                return False
+            citations = resp.get('key_citations', [])
+            if citations is not None and not isinstance(citations, list):
+                return False
+            return True
 
-        # Validate response
-        if 'irac' not in response or 'full_answer' not in response:
-            raise ValueError(f"Invalid OAB opening response: {response}")
+        response = self._generate_with_validation(
+            prompt=prompt,
+            max_tokens=2000,
+            validator=_valid_irac_response,
+            retry_instruction="ATENÇÃO: responda SOMENTE com JSON válido preenchendo todos os campos de IRAC, full_answer e key_citations.",
+            error_message="Invalid OAB opening response"
+        )
 
         # Store opening argument
         self.opening_argument = response
@@ -251,11 +304,31 @@ class Debater:
             opponent_opening=opponent_opening
         )
 
-        response = self.client.generate_json(prompt, max_tokens=2000)
+        def _valid_irac_response(resp: Dict) -> bool:
+            if not isinstance(resp, dict):
+                return False
+            irac = resp.get('irac')
+            if not isinstance(irac, dict):
+                return False
+            for key in ['issue', 'rule', 'application', 'conclusion']:
+                value = irac.get(key)
+                if not isinstance(value, str) or not value.strip():
+                    return False
+            full_answer = resp.get('full_answer')
+            if not isinstance(full_answer, str) or not full_answer.strip():
+                return False
+            citations = resp.get('key_citations', [])
+            if citations is not None and not isinstance(citations, list):
+                return False
+            return True
 
-        # Validate response
-        if 'irac' not in response or 'full_answer' not in response:
-            raise ValueError(f"Invalid OAB adversarial opening response: {response}")
+        response = self._generate_with_validation(
+            prompt=prompt,
+            max_tokens=2000,
+            validator=_valid_irac_response,
+            retry_instruction="ATENÇÃO: responda SOMENTE com JSON válido preenchendo todos os campos de IRAC, full_answer e key_citations.",
+            error_message="Invalid OAB adversarial opening response"
+        )
 
         # Store opening argument
         self.opening_argument = response

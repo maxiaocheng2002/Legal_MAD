@@ -86,7 +86,7 @@ class GroqClient:
         if reasoning_format:
             kwargs["reasoning_format"] = reasoning_format
 
-        if include_reasoning is not None:
+        if include_reasoning:
             kwargs["include_reasoning"] = include_reasoning
 
         # Retry logic with exponential backoff
@@ -131,26 +131,29 @@ class GroqClient:
             Parsed JSON dictionary
         """
         # Try with JSON mode first
+        used_json_mode = True
         try:
             response_text = self.generate(
                 prompt,
                 temperature=temperature,
                 max_tokens=max_tokens,
                 response_format={"type": "json_object"},
-                #include_reasoning=False  # Disable reasoning to save tokens
             )
         except Exception as e:
             # If JSON mode fails, try without it but disable reasoning to save tokens
             error_str = str(e).lower()
             if "json_validate_failed" in error_str or "400" in error_str:
-                print(f"⚠️  JSON mode failed for {self.model}, retrying without JSON mode and with include_reasoning=False...")
+                print(f"⚠️  JSON mode failed for {self.model}, retrying without enforcement...")
+                used_json_mode = False
+                fallback_prompt = (
+                    f"{prompt}\n\nIMPORTANTE: A resposta anterior não estava em JSON válido. "
+                    "Responda SOMENTE com JSON válido seguindo exatamente o formato solicitado. "
+                    "Não inclua Markdown, texto extra ou explicações."
+                )
                 response_text = self.generate(
-                    prompt,
+                    fallback_prompt,
                     temperature=temperature,
                     max_tokens=max_tokens,
-                    include_reasoning=False  # Disable reasoning to avoid token waste
-                    #reasoning_format="parsed"  
-                    # No response_format
                 )
             else:
                 raise
@@ -158,8 +161,26 @@ class GroqClient:
         try:
             return json.loads(response_text)
         except json.JSONDecodeError as e:
-            print(f"Failed to parse JSON response: {response_text}")
-            raise e
+            if used_json_mode:
+                print(f"Failed to parse JSON response: {response_text}")
+                raise e
+
+            # Attempt one repair pass enforcing JSON mode again
+            repair_prompt = (
+                f"{prompt}\n\nATENÇÃO: Você DEVE responder exclusivamente com JSON válido. "
+                "Reescreva a resposta respeitando o formato exigido, sem qualquer texto adicional."
+            )
+            repaired_text = self.generate(
+                repair_prompt,
+                temperature=temperature,
+                max_tokens=max_tokens,
+                response_format={"type": "json_object"}
+            )
+            try:
+                return json.loads(repaired_text)
+            except json.JSONDecodeError:
+                print(f"Failed to parse repaired JSON response: {repaired_text}")
+                raise e
 
 
 class OpenRouterClient:
@@ -202,6 +223,7 @@ class OpenRouterClient:
         self.retry_delay = retry_delay
         self.site_url = site_url
         self.site_name = site_name
+        self.json_mode_supported = True  # assume supported until proven otherwise
 
     def _get_headers(self) -> Dict[str, str]:
         """Build request headers."""
@@ -351,30 +373,60 @@ class OpenRouterClient:
         Returns:
             Parsed JSON dictionary
         """
-        # Try with JSON mode first
-        try:
-            response_text = self.generate(
-                prompt,
-                temperature=temperature,
-                max_tokens=max_tokens,
-                response_format={"type": "json_object"},
-            )
-        except requests.exceptions.HTTPError as e:
-            # If 400 Bad Request, likely JSON mode not supported - retry without it
-            if e.response.status_code == 400:
-                print(f"⚠️  JSON mode not supported by this model, retrying without response_format...")
+        response_text = None
+
+        # Try with JSON mode if still marked as supported
+        if self.json_mode_supported:
+            try:
                 response_text = self.generate(
                     prompt,
                     temperature=temperature,
                     max_tokens=max_tokens,
-                    response_format=None
+                    response_format={"type": "json_object"},
                 )
-            else:
-                raise
+            except requests.exceptions.HTTPError as e:
+                if e.response is not None and e.response.status_code == 400:
+                    self.json_mode_supported = False
+                    print("⚠️  JSON mode not supported by this model, retrying without response_format...")
+                else:
+                    raise
+
+        if response_text is None:
+            response_text = self.generate(
+                prompt,
+                temperature=temperature,
+                max_tokens=max_tokens,
+                response_format=None
+            )
 
         try:
             return json.loads(response_text)
         except json.JSONDecodeError as e:
+            # Attempt to sanitize by escaping literal newlines inside strings
+            def _escape_string_newlines(text: str) -> str:
+                result = []
+                in_string = False
+                escape = False
+                for ch in text:
+                    if ch == '"' and not escape:
+                        in_string = not in_string
+                    if in_string and ch in ('\n', '\r'):
+                        result.append('\\n')
+                        escape = False
+                        continue
+                    result.append(ch)
+                    if ch == '\\' and not escape:
+                        escape = True
+                    else:
+                        escape = False
+                return ''.join(result)
+
+            sanitized = _escape_string_newlines(response_text)
+            if sanitized != response_text:
+                try:
+                    return json.loads(sanitized)
+                except json.JSONDecodeError:
+                    pass
             print(f"Failed to parse JSON response: {response_text}")
             raise e
 

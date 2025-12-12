@@ -7,12 +7,13 @@ import argparse
 import json
 import time
 from pathlib import Path
-from typing import Dict
+from typing import Dict, Optional
 from tqdm import tqdm
 
 from src.utils.data_loader import load_oab_with_guidelines
 from src.agents.debater_experimental import Debater
 from src.agents.judge_experimental import Judge
+from bert_score import BERTScorer
 
 
 def create_client(provider: str = "openrouter", model: str = None, max_tokens: int = 2000, max_retries: int = 10, retry_delay: float = 2.0):
@@ -49,6 +50,54 @@ def create_client(provider: str = "openrouter", model: str = None, max_tokens: i
         )
     else:
         raise ValueError(f"Unknown provider: {provider}")
+
+
+def create_bert_scorer(model_type: Optional[str] = None) -> Optional[BERTScorer]:
+    """
+    Initialize a BERTScorer for Portuguese answers.
+
+    Args:
+        model_type: Optional HF model name. If None, uses language-specific default.
+
+    Returns:
+        BERTScorer instance or None if initialization fails.
+    """
+    try:
+        if model_type:
+            return BERTScorer(model_type=model_type, rescale_with_baseline=True)
+        # Default Portuguese scorer from BERTScore
+        return BERTScorer(lang="pt", rescale_with_baseline=True)
+    except Exception as exc:
+        print(f"[WARNING] Could not initialize BERTScorer ({exc}). "
+              f"BERT-based accuracy will be skipped.")
+        return None
+
+
+def compute_bert_accuracy(
+    prediction: str,
+    reference: str,
+    scorer: Optional[BERTScorer]
+) -> Optional[float]:
+    """
+    Compute BERTScore F1 between prediction and reference to approximate accuracy.
+
+    Returns:
+        Float score in [0, 1] or None if scorer/reference unavailable.
+    """
+    if scorer is None:
+        return None
+
+    prediction = (prediction or "").strip()
+    reference = (reference or "").strip()
+    if not prediction or not reference:
+        return None
+
+    try:
+        _, _, f1 = scorer.score([prediction], [reference])
+        return float(f1.mean().item())
+    except Exception as exc:
+        print(f"[WARNING] Failed to compute BERTScore: {exc}")
+        return None
 
 
 def run_mad_oab(
@@ -192,7 +241,10 @@ def run_experiments_oab(
     output_dir: str = "results",
     provider: str = "openrouter",
     model: str = None,
-    mode: str = "irac"
+    mode: str = "irac",
+    bert_model: Optional[str] = None,
+    accuracy_metric: str = "bertscore",
+    accuracy_threshold: Optional[float] = None
 ):
     """
     Run MAD experiments on OAB open-ended questions.
@@ -218,12 +270,24 @@ def run_experiments_oab(
     print(f"Start time: {time.strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 40)
 
+    # Validate accuracy settings
+    accuracy_metric = accuracy_metric.lower()
+    if accuracy_metric != "bertscore":
+        raise ValueError(f"Unsupported accuracy metric '{accuracy_metric}'. Only 'bertscore' is available.")
+    if accuracy_threshold is not None and not (0.0 <= accuracy_threshold <= 1.0):
+        raise ValueError("Accuracy threshold must be between 0 and 1.")
+
     # Load data with ground truth
     print(f"Loading OAB-Bench questions with ground truth...")
     questions = load_oab_with_guidelines(sample_size=sample_size)
 
     # Initialize client with retry logic
     client = create_client(provider=provider, model=model, max_tokens=2000, max_retries=10, retry_delay=2.0)
+
+    # Initialize BERT scorer once for reuse
+    bert_scorer = create_bert_scorer(model_type=bert_model)
+    if bert_scorer:
+        print(f"BERT accuracy: using {'custom model '+bert_model if bert_model else 'default Portuguese baseline'}")
 
     # Create output directory
     output_path = Path(output_dir)
@@ -246,12 +310,33 @@ def run_experiments_oab(
         results = []
 
     question_times = []
+    bert_scores = []
+    accuracy_hits = []
 
     for idx, question in enumerate(tqdm(questions, desc="Processing OAB questions"), 1):
         question_start = time.time()
         try:
             result = run_mad_oab(question, client, mode=mode)
             results.append(result)
+
+            # Compute BERTScore-based accuracy
+            reference_answer = result['ground_truth'].get('reference_answer', '')
+            bert_score = compute_bert_accuracy(
+                prediction=result['judge']['final_answer'],
+                reference=reference_answer,
+                scorer=bert_scorer
+            )
+            accuracy_pass = None
+            if bert_score is not None:
+                bert_scores.append(bert_score)
+                if accuracy_threshold is not None:
+                    accuracy_pass = bert_score >= accuracy_threshold
+                    accuracy_hits.append(1 if accuracy_pass else 0)
+
+            result['metrics'] = {
+                'bert_score_f1': bert_score,
+                'accuracy_pass': accuracy_pass
+            }
 
             question_time = time.time() - question_start
             question_times.append(question_time)
@@ -263,11 +348,19 @@ def run_experiments_oab(
             eta_minutes = eta_seconds / 60
 
             answer_length = len(result['judge']['final_answer'])
-            print(f"\n[{idx}/{sample_size}] Question {result['question_id']} | "
-                  f"Category: {result['category']} | "
-                  f"Time: {question_time:.1f}s | "
-                  f"Answer length: {answer_length} chars | "
-                  f"ETA: {eta_minutes:.1f}min")
+            progress_msg = (
+                f"\n[{idx}/{sample_size}] Question {result['question_id']} | "
+                f"Category: {result['category']} | "
+                f"Time: {question_time:.1f}s | "
+                f"Answer length: {answer_length} chars | "
+                f"ETA: {eta_minutes:.1f}min"
+            )
+            if bert_score is not None:
+                progress_msg += f" | BERT-F1: {bert_score:.3f}"
+                if accuracy_pass is not None:
+                    status = "PASS" if accuracy_pass else "FAIL"
+                    progress_msg += f" @ {accuracy_threshold:.2f}: {status}"
+            print(progress_msg)
 
             # Checkpoint: Save every 10 questions
             if len(results) % 10 == 0:
@@ -300,6 +393,9 @@ def run_experiments_oab(
     # Print summary
     successful = len([r for r in results if 'error' not in r])
     errors = len([r for r in results if 'error' in r])
+    avg_bert_score = sum(bert_scores) / len(bert_scores) if bert_scores else None
+    accuracy_rate = (sum(accuracy_hits) / len(accuracy_hits)) if accuracy_hits else None
+
     print(f"\n{'=' * 40}")
     print(f"=== MAD OAB {mode.upper()} Experiment Complete ===")
     print(f"Total questions: {len(results)}")
@@ -307,6 +403,12 @@ def run_experiments_oab(
     print(f"Errors: {errors}")
     print(f"Total time: {total_time/60:.2f} minutes")
     print(f"Avg time per question: {avg_time_per_question:.1f}s")
+    if avg_bert_score is not None:
+        print(f"BERTScore accuracy (avg F1): {avg_bert_score:.4f} over {len(bert_scores)} evaluated answers")
+    else:
+        print("BERTScore accuracy not computed (missing scorer or references)")
+    if accuracy_rate is not None:
+        print(f"Accuracy@{accuracy_threshold:.2f}: {accuracy_rate*100:.1f}% ({len(accuracy_hits)} evaluated)")
     print(f"Results saved to: {output_file}")
     print(f"End time: {time.strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 40)
@@ -324,6 +426,13 @@ if __name__ == "__main__":
                         help="Output directory (default: results)")
     parser.add_argument("--mode", type=str, choices=["irac", "vanilla"], default="irac",
                         help="MAD mode: 'irac' (structured) or 'vanilla' (simple) (default: irac)")
+    parser.add_argument("--bert-model", type=str, default=None,
+                        help="Optional HuggingFace model for BERTScore accuracy (default: multilingual Portuguese baseline)")
+    parser.add_argument("--accuracy-metric", type=str, default="bertscore",
+                        choices=["bertscore"],
+                        help="Accuracy metric for open-ended evaluation (default: bertscore)")
+    parser.add_argument("--accuracy-threshold", type=float, default=None,
+                        help="Optional threshold (0-1) to convert metric to pass/fail accuracy")
     args = parser.parse_args()
 
     run_experiments_oab(
@@ -331,5 +440,8 @@ if __name__ == "__main__":
         output_dir=args.output_dir,
         provider=args.provider,
         model=args.model,
-        mode=args.mode
+        mode=args.mode,
+        bert_model=args.bert_model,
+        accuracy_metric=args.accuracy_metric,
+        accuracy_threshold=args.accuracy_threshold
     )

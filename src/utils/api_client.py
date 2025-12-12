@@ -19,7 +19,7 @@ class GroqClient:
         api_key: Optional[str] = None,
         model: str = "llama-3.1-8b-instant",
         temperature: float = 0.0,
-        max_tokens: int = 350  # Reduced default for IRAC-structured outputs
+        max_tokens: int = 350
     ):
         """
         Initialize Groq client.
