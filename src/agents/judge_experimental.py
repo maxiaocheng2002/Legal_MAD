@@ -3,19 +3,19 @@ Judge agent for MAD system.
 """
 
 from typing import Dict
-from src.utils.api_client_experimental import GroqClient
+from src.utils.api_client_experimental import GroqClient, OpenRouterClient
 from src.agents.prompts_experimental import get_judge_decision_prompt
 
 
 class Judge:
     """Judge agent that synthesizes debate and makes final decision."""
 
-    def __init__(self, client: GroqClient):
+    def __init__(self, client):
         """
         Initialize judge.
 
         Args:
-            client: Groq API client
+            client: API client (GroqClient or OpenRouterClient)
         """
         self.client = client
 
@@ -49,7 +49,7 @@ class Judge:
             debate_history=debate_history
         )
 
-        response = self.client.generate_json(prompt, max_tokens=800)
+        response = self.client.generate_json(prompt, max_tokens=1200)
 
         # Validate response
         if 'decision' not in response:
@@ -95,7 +95,7 @@ class Judge:
             debate_history=debate_history
         )
 
-        response = self.client.generate_json(prompt, max_tokens=1000)
+        response = self.client.generate_json(prompt, max_tokens=1200)
 
         # Validate response
         if 'decision' not in response:
@@ -172,5 +172,79 @@ class Judge:
             raise ValueError(
                 f"Decision {response['decision']} doesn't match winner debater_y's position {debater_y_pos}"
             )
+
+        return response
+
+    # ==================== OAB OPEN-ENDED METHOD ====================
+
+    def synthesize_answer_oab(
+        self,
+        question: str,
+        category: str,
+        debater_x_rebuttal: Dict,
+        debater_y_rebuttal: Dict
+    ) -> Dict:
+        """
+        Synthesize final answer for OAB open-ended question based on debate.
+
+        Args:
+            question: Open-ended legal question
+            category: Law category
+            debater_x_rebuttal: Debater X's rebuttal with refined answer
+            debater_y_rebuttal: Debater Y's rebuttal with refined answer
+
+        Returns:
+            Dictionary with final_answer, rationale, and key_citations
+        """
+        from src.agents.prompts_oab import get_judge_synthesis_prompt_oab
+
+        prompt = get_judge_synthesis_prompt_oab(
+            question=question,
+            category=category,
+            debater_x_rebuttal=debater_x_rebuttal,
+            debater_y_rebuttal=debater_y_rebuttal
+        )
+
+        response = self.client.generate_json(prompt, max_tokens=1500)
+
+        # Validate response
+        if 'final_answer' not in response:
+            raise ValueError(f"Invalid OAB synthesis response: {response}")
+
+        return response
+
+    def synthesize_answer_oab_vanilla(
+        self,
+        question: str,
+        category: str,
+        debater_x_rebuttal: Dict,
+        debater_y_rebuttal: Dict
+    ) -> Dict:
+        """
+        Synthesize final answer for OAB based on debate (Vanilla - no IRAC structure).
+
+        Args:
+            question: Open-ended legal question
+            category: Law category
+            debater_x_rebuttal: Debater X's rebuttal with refined answer
+            debater_y_rebuttal: Debater Y's rebuttal with refined answer
+
+        Returns:
+            Dictionary with final_answer, rationale, and key_citations
+        """
+        from src.agents.prompts_oab_vanilla import get_judge_synthesis_prompt_oab_vanilla
+
+        prompt = get_judge_synthesis_prompt_oab_vanilla(
+            question=question,
+            category=category,
+            debater_x_rebuttal=debater_x_rebuttal,
+            debater_y_rebuttal=debater_y_rebuttal
+        )
+
+        response = self.client.generate_json(prompt, max_tokens=1500)
+
+        # Validate response
+        if 'final_answer' not in response:
+            raise ValueError(f"Invalid OAB vanilla synthesis response: {response}")
 
         return response
