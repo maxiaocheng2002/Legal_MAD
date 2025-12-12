@@ -1,6 +1,8 @@
 import os
 import sys
 import json
+import random 
+import re
 
 # --- Local Imports: Path Configuration ---
 # Calculate the project root (.. / .. from src/experiments)
@@ -11,24 +13,87 @@ sys.path.append(PROJECT_ROOT)
 from src.utils.data_loader import load_bar_exam_qa
 from src.utils.api_client import GroqClient 
 # Import the IRAC CoT agent
-from src.agents.cot_irac_prompt import create_cot_prompt as create_irac_cot_prompt 
+from src.baselines.cot_irac_prompt import create_cot_prompt as create_irac_cot_prompt 
 # Import the Basic CoT agent
-from src.agents.cot_basic_prompt import create_basic_cot_prompt
+from src.baselines.cot_basic_prompt import create_basic_cot_prompt
 
 
 # --- 1. Configuration ---
 # Define configuration settings required for the experiment
-MODEL_NAME = "llama-3.1-8b-instant" # 모델을 70b에서 8b로 변경
-MAX_TOKENS = 500
-SAMPLE_SIZE = 300 
+MODEL_NAME = "llama-3.3-70b-versatile" # llama-3.1-8b-instant or llama-3.3-70b-versatile
+MAX_TOKENS = 1000
+SAMPLE_SIZE = 500 
 # Configuration for result saving path: Set to Legal_MAD/results
 RESULTS_DIR = os.path.join(PROJECT_ROOT, 'results') 
 
 # Create GroqClient instance (temperature=0.0 for consistent CoT reasoning)
-cot_client = GroqClient(model=MODEL_NAME, max_tokens=MAX_TOKENS, temperature=0.0)
+cot_client = GroqClient(
+    model=MODEL_NAME,
+    max_tokens=MAX_TOKENS,
+    temperature=0.0,
+)
+
 
 
 # --- 2. CoT Inference Function ---
+def shuffle_choices(questions, seed: int = 42):
+    """
+    Shuffle choices for each question, and update the correct answer label accordingly.
+    This helps prevent the model from overfitting to fixed option positions.
+    """
+    random.seed(seed)
+    label_to_idx = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
+    idx_to_label = ['A', 'B', 'C', 'D']
+
+    shuffled_questions = []
+
+    for q in questions:
+        q_copy = q.copy()
+
+        choices = q_copy['choices']
+        assert len(choices) == 4, "Only 4-choice questions are supported."
+
+        original_answer_label = q_copy['answer']
+        original_correct_idx = label_to_idx[original_answer_label]
+
+        indices = list(range(4))
+        random.shuffle(indices)
+
+        # 새 choice 리스트
+        new_choices = [choices[i] for i in indices]
+
+        # shuffle 이후 정답 위치
+        new_correct_idx = indices.index(original_correct_idx)
+        new_answer_label = idx_to_label[new_correct_idx]
+
+        q_copy['choices'] = new_choices
+        q_copy['answer'] = new_answer_label
+        q_copy['choice_permutation'] = indices  # 나중에 분석용
+
+        shuffled_questions.append(q_copy)
+
+    return shuffled_questions
+
+def parse_final_answer(response_text: str):
+    """
+    Extract the final answer (A/B/C/D) from the model's full response text.
+    Assumes the model outputs a line like: 'Final Answer: C'
+    """
+    if not isinstance(response_text, str):
+        return None
+
+    # 1) 'Final Answer: X' 패턴 우선 탐색
+    match = re.search(r'Final Answer\s*:\s*([ABCD])', response_text, re.IGNORECASE)
+    if match:
+        return match.group(1).upper()
+
+    # 2) fallback: 맨 끝 부분에서 A/B/C/D 단독 글자 찾기 (조금 느슨한 규칙)
+    tail = response_text[-50:]
+    match2 = re.search(r'\b([ABCD])\b', tail)
+    if match2:
+        return match2.group(1).upper()
+
+    return None
 
 def run_single_cot_experiment(
     question_data: list,
@@ -62,14 +127,37 @@ def run_single_cot_experiment(
             # Call GroqClient's generate method
             response = cot_client.generate(prompt=full_prompt)
             
+            predicted_answer = parse_final_answer(response)
+            is_correct = (predicted_answer == question['answer'])
+            
             # Store the result
             result = {
-                'id': question['id'],
-                'question': question['question'],
-                'expected_answer': question['answer'],
-                'model_response': response,
-                'experiment_name': experiment_name
+                # mad_bar_exam_qa_5.json 상단 메타데이터와 매칭
+                "question_id": question["id"],
+                "question": question["question"],
+                "prompt": question.get("prompt", "nan"),        # 데이터에 prompt 없으면 "nan"
+                "choices": question["choices"],
+                "gold_answer": question["answer"],
+                "gold_passage": question.get("gold_passage", ""),
+
+                # single-agent baseline 결과를 judge에 넣기
+                "debate": None,
+                "judge": {
+                    "decision": predicted_answer,              # 모델이 고른 A/B/C/D
+                    "rationale": response,                     # CoT 전체 텍스트
+                    "correct": bool(predicted_answer == question["answer"])
+                },
+
+                # 추가 메타데이터 (분석용)
+                "meta": {
+                    "experiment_name": experiment_name,
+                    "model_name": MODEL_NAME,
+                    "system_instruction": system_instruction,
+                    "user_prompt": prompt_text,
+                    "choice_permutation": question.get("choice_permutation", None)
+                }
             }
+
             all_results.append(result)
 
             # Optional: Display progress every 10 questions
@@ -77,15 +165,35 @@ def run_single_cot_experiment(
                  print(f"Progress: Processed {i + 1}/{len(question_data)} questions.")
             
         except Exception as e:
-            # Log the error for the question
             print(f"❌ API Call Error for Q {question['id']} ({experiment_name}): {e}")
-            all_results.append({
-                'id': question['id'],
-                'question': question['question'],
-                'expected_answer': question['answer'],
-                'model_response': f"ERROR: {e}",
-                'experiment_name': experiment_name
-            })
+
+            result = {
+                "question_id": question["id"],
+                "question": question["question"],
+                "prompt": question.get("prompt", "nan"),
+                "choices": question["choices"],
+                "gold_answer": question["answer"],
+                "gold_passage": question.get("gold_passage", ""),
+
+                "debate": None,
+                "judge": {
+                    "decision": None,
+                    "rationale": f"ERROR: {e}",
+                    "correct": False,
+                },
+
+                "meta": {
+                    "experiment_name": experiment_name,
+                    "model_name": MODEL_NAME,
+                    "system_instruction": system_instruction,
+                    "user_prompt": prompt_text,
+                    "choice_permutation": question.get("choice_permutation", None),
+                },
+            }
+
+            all_results.append(result)
+
+
             
     # Save results to a JSON file in the specified directory
     output_filename = os.path.join(results_dir, f"results_b2_cot_{experiment_name.replace(' ', '_')}.json")
@@ -102,6 +210,10 @@ if __name__ == "__main__":
     
     # 1. Load data sample
     questions = load_bar_exam_qa(SAMPLE_SIZE)
+
+    # 1-1. Shuffle MCQ choices & update answer label
+    if questions:
+        questions = shuffle_choices(questions, seed=42)    
     
     # 2. Prepare results directory: Create if it doesn't exist
     os.makedirs(RESULTS_DIR, exist_ok=True)
