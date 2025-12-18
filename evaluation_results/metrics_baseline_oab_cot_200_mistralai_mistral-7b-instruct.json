@@ -1,0 +1,3799 @@
+{
+  "experiment": "baseline_oab_cot_200_mistralai_mistral-7b-instruct",
+  "total_questions": 168,
+  "evaluated_questions": 164,
+  "errors": 4,
+  "aggregated_metrics": {
+    "citation_f1": {
+      "precision": 0.0122,
+      "recall": 0.0122,
+      "f1": 0.0122
+    },
+    "bertscore": {
+      "precision": 0.5487,
+      "recall": 0.646,
+      "f1": 0.5917
+    },
+    "llm_judge": {
+      "correctness": 0.689,
+      "reasoning": 0.5061,
+      "citations": 0.6098,
+      "total": 1.8049,
+      "normalized": 0.1641
+    }
+  },
+  "per_question_metrics": [
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6467,
+        "recall": 0.7708,
+        "f1": 0.7033
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 3.0,
+        "total": 10.0,
+        "normalized": 0.9091,
+        "justification": "A resposta do candidato está correta e completa, abordando a obrigatoriedade da matriz de alocação de riscos e sua importância, embora não tenha mencionado o artigo exato da Lei nº 14.133/21 que trata do tema, mas fez referência ao parágrafo correto. O raciocínio é claro e bem estruturado, mas poderia ser ainda mais aprofundado."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5815,
+        "recall": 0.7217,
+        "f1": 0.644
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 3.0,
+        "total": 10.0,
+        "normalized": 0.9091,
+        "justification": "A resposta do candidato está correta e completa, abordando a possibilidade de exigir programa de integridade com base na legislação pertinente, embora tenha mencionado um artigo que não é o mais específico para a questão. O raciocínio é claro e bem estruturado, mas poderia ser ainda mais aprofundado."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5408,
+        "recall": 0.7437,
+        "f1": 0.6262
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que o atraso configura mora administrativa, mas a argumentação poderia ser mais clara sobre a relação entre o atraso e a possibilidade de rescisão. As citações legais são adequadas, mas faltou mencionar o parágrafo do artigo 102 que trata especificamente do prazo de 90 dias."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6494,
+        "recall": 0.7035,
+        "f1": 0.6754
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa em relação aos direitos do contratado, mas não menciona a devolução da garantia e o custo da desmobilização, que são direitos específicos previstos na legislação. O raciocínio é claro, mas poderia ser mais estruturado, e as citações legais são adequadas, embora não sejam perfeitas."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 5,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6383,
+        "recall": 0.6994,
+        "f1": 0.6674
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que Jaqueline pode ser responsabilizada por sua omissão, mas poderia ter explorado mais a questão da responsabilidade solidária. As citações legais são adequadas, mas faltaram alguns complementos que poderiam enriquecer a fundamentação."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6203,
+        "recall": 0.8185,
+        "f1": 0.7057
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 4.0,
+        "total": 11.0,
+        "normalized": 1.0,
+        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando a legitimidade para denúncia e o dever de probidade dos agentes públicos. As citações legais estão corretas e completas, incluindo o artigo relevante da Constituição Federal."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6423,
+        "recall": 0.721,
+        "f1": 0.6794
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 4.0,
+        "total": 11.0,
+        "normalized": 1.0,
+        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando o prazo de interposição do recurso administrativo de acordo com a Lei nº 9.784/1999. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado na explicação do contexto da aplicação da norma."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 3,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6541,
+        "recall": 0.678,
+        "f1": 0.6658
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a Administração pode rever o ato, mas poderia ter aprofundado mais sobre a autotutela e a legislação específica. As citações legais são adequadas, mas faltaram detalhes sobre os artigos mencionados."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6159,
+        "recall": 0.5613,
+        "f1": 0.5874
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 0.0,
+        "total": 5.0,
+        "normalized": 0.4545,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que Maria não tem direito à usucapião, mas não aborda adequadamente o requisito subjetivo do animus domini e não cita a legislação pertinente."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5248,
+        "recall": 0.5784,
+        "f1": 0.5503
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 2.0,
+        "total": 7.0,
+        "normalized": 0.6364,
+        "justification": "A resposta do candidato está correta ao afirmar que João pode pedir a restituição do imóvel, mas a fundamentação sobre a usucapião poderia ser mais detalhada. A citação legal é pertinente, mas não menciona o artigo específico do CPC que trata da reconvenção."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 5,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.53,
+        "recall": 0.7011,
+        "f1": 0.6037
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 4.0,
+        "total": 11.0,
+        "normalized": 1.0,
+        "justification": "A resposta do candidato apresenta todos os passos necessários para a adoção, incluindo o consentimento e a alteração da certidão de nascimento, com fundamentação adequada e coerente, além de citar corretamente os artigos pertinentes do Código Civil e do ECA."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5711,
+        "recall": 0.7091,
+        "f1": 0.6327
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta ao indicar o foro da residência de Tália, mas não menciona especificamente o artigo do ECA que trata da guarda, o que poderia enriquecer a fundamentação. O raciocínio é claro, mas poderia ser mais estruturado."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 5,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6324,
+        "recall": 0.6571,
+        "f1": 0.6445
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que Maria tem o direito de revogar o consentimento e solicitar a eliminação dos dados, mas poderia ter explorado mais a questão da responsabilidade da SuperData Ltda. nas determinações do titular. As citações legais são adequadas, mas faltaram alguns complementos que poderiam enriquecer a argumentação."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5281,
+        "recall": 0.6964,
+        "f1": 0.6007
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a operadora pode ser responsabilizada, mas poderia ser mais direta ao mencionar a responsabilidade solidária prevista na LGPD. As citações legais são adequadas, mas faltam alguns detalhes que poderiam enriquecer a fundamentação."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5725,
+        "recall": 0.6956,
+        "f1": 0.6281
+      },
+      "llm_judge": {
+        "correctness": 2.0,
+        "reasoning": 2.0,
+        "citations": 2.0,
+        "total": 6.0,
+        "normalized": 0.5455,
+        "justification": "A resposta do candidato apresenta uma alternativa válida (ação monitória), mas não é a mais célere, pois o cheque é um título executivo extrajudicial, o que torna a execução mais adequada. As citações legais estão corretas, mas faltam detalhes sobre o prazo de apresentação do cheque."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5512,
+        "recall": 0.6764,
+        "f1": 0.6074
+      },
+      "llm_judge": {
+        "correctness": 1.0,
+        "reasoning": 1.0,
+        "citations": 2.0,
+        "total": 4.0,
+        "normalized": 0.3636,
+        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a possibilidade de penhora do táxi, desconsiderando a impenhorabilidade prevista no art. 833, inciso V, do CPC. O raciocínio é básico e não aborda adequadamente a proteção do bem como instrumento de trabalho."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5695,
+        "recall": 0.6214,
+        "f1": 0.5943
+      },
+      "llm_judge": {
+        "correctness": 1.0,
+        "reasoning": 2.0,
+        "citations": 1.0,
+        "total": 4.0,
+        "normalized": 0.3636,
+        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a hierarquia das normas, pois a Lei Complementar pode ser alterada por lei ordinária em certas circunstâncias, conforme o art. 170, parágrafo único, da CF/88. O raciocínio é claro, mas a fundamentação jurídica é insuficiente e a citação legal é inadequada."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5946,
+        "recall": 0.7704,
+        "f1": 0.6711
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta ao afirmar que a sociedade empresária não tem legitimidade para a ADI, mas é incompleta ao não mencionar que a empresa pode questionar a lei por meio de controle difuso. As citações legais estão corretas, mas poderiam ser mais precisas."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5609,
+        "recall": 0.6961,
+        "f1": 0.6213
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 3.0,
+        "total": 10.0,
+        "normalized": 0.9091,
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a violação da iniciativa privativa do Presidente da República e a usurpação de competências. As citações legais são adequadas, embora a resposta pudesse incluir mais detalhes sobre os dispositivos mencionados."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "predicted_count": 0,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Empty prediction or reference"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5925,
+        "recall": 0.6773,
+        "f1": 0.632
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 1.0,
+        "citations": 2.0,
+        "total": 3.0,
+        "normalized": 0.2727,
+        "justification": "A resposta do candidato está incorreta ao afirmar que os senadores têm legitimidade para apresentar o projeto, pois a iniciativa é privativa do Presidente da República. O raciocínio é básico, mas não sustenta a conclusão correta, e as citações legais são imprecisas."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6529,
+        "recall": 0.6738,
+        "f1": 0.6632
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 9.0,
+        "normalized": 0.8182,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a aprovação não ocorreu em harmonia com a ordem constitucional, mas o raciocínio poderia ser mais estruturado. A citação do artigo 69 da Constituição Federal é adequada, mas poderia incluir mais detalhes sobre a maioria absoluta."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4333,
+        "recall": 0.5299,
+        "f1": 0.4768
+      },
+      "llm_judge": {
+        "correctness": 2.0,
+        "reasoning": 2.0,
+        "citations": 0.0,
+        "total": 4.0,
+        "normalized": 0.3636,
+        "justification": "A resposta do candidato apresenta uma proposta de revogação ou modificação da lei, mas não menciona a possibilidade de sustação do decreto pelo Congresso Nacional, que é a medida correta. Além disso, não há citações legais que sustentem a argumentação apresentada."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5549,
+        "recall": 0.6467,
+        "f1": 0.5973
+      },
+      "llm_judge": {
+        "correctness": 2.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 7.0,
+        "normalized": 0.6364,
+        "justification": "A resposta do candidato apresenta uma análise correta sobre a impossibilidade de ADI por violação de lei ordinária, mas sugere uma interpretação que não é amplamente aceita, tornando-a incompleta. As citações legais são relevantes, mas não são totalmente precisas em relação ao contexto da questão."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5464,
+        "recall": 0.642,
+        "f1": 0.5903
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 0.0,
+        "total": 7.0,
+        "normalized": 0.6364,
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a ausência de cláusula de exclusividade e a natureza da relação entre corretor e cliente. No entanto, não há citação de dispositivos legais, o que poderia fortalecer a argumentação."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.557,
+        "recall": 0.7378,
+        "f1": 0.6348
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 3.0,
+        "total": 10.0,
+        "normalized": 0.9091,
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a ausência de dependência do corretor e a legalidade da atuação direta da contratante. As citações legais são pertinentes, embora não tenham sido completas em relação aos dispositivos mencionados."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5655,
+        "recall": 0.7155,
+        "f1": 0.6317
+      },
+      "llm_judge": {
+        "correctness": 1.0,
+        "reasoning": 1.0,
+        "citations": 2.0,
+        "total": 4.0,
+        "normalized": 0.3636,
+        "justification": "A resposta do candidato apresenta uma interpretação errônea ao afirmar que o registro confere personalidade jurídica, desconsiderando que a sociedade em comum, sem registro, não possui tal personalidade, conforme o Art. 993 do Código Civil. Além disso, a citação do Art. 985 é inadequada, pois não se aplica ao contexto da questão."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5294,
+        "recall": 0.7591,
+        "f1": 0.6238
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta ao identificar a natureza da contribuição como um aporte de capital em uma sociedade em conta de participação, mas poderia ser mais precisa ao mencionar explicitamente que se trata de patrimônio especial, conforme o Art. 994 do Código Civil. O raciocínio é claro, mas poderia ser mais estruturado."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5638,
+        "recall": 0.6524,
+        "f1": 0.6049
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 3.0,
+        "total": 10.0,
+        "normalized": 0.9091,
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a impossibilidade do pedido da falida com base na legislação pertinente e nos princípios da falência. A citação do artigo 126 da Lei 11.101/2005 é adequada, embora não tenha mencionado o artigo 158, que poderia complementar a argumentação."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 1,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5864,
+        "recall": 0.6227,
+        "f1": 0.604
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao mencionar a necessidade de publicação do edital e o prazo para manifestação dos credores, mas não faz referência ao prazo específico de 5 dias e à possibilidade de manifestação sobre inconsistências formais, conforme o Art. 159, § 1º da Lei nº 11.101/05."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4971,
+        "recall": 0.6938,
+        "f1": 0.5792
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6048,
+        "recall": 0.6311,
+        "f1": 0.6176
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 2.0,
+        "total": 7.0,
+        "normalized": 0.6364,
+        "justification": "A resposta do candidato está correta ao afirmar que o remetente pode alterar a destinação, mas não menciona explicitamente o artigo 748 do Código Civil, que é fundamental para a justificativa completa. O raciocínio é claro, mas poderia ser mais estruturado."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 6,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5351,
+        "recall": 0.6192,
+        "f1": 0.5741
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato apresenta argumentos válidos, como a ausência de consumação e a ilegalidade das provas, mas não aborda a atipicidade da conduta com a mesma clareza da resposta de referência. As citações legais são corretas, mas poderiam ser mais completas em relação ao tipo penal de terrorismo."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5852,
+        "recall": 0.6396,
+        "f1": 0.6112
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5525,
+        "recall": 0.696,
+        "f1": 0.616
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao identificar a requisição de exame de insanidade mental como medida processual adequada, mas poderia ser mais clara na estruturação do raciocínio. As citações legais são precisas, mas faltam alguns complementos que poderiam enriquecer a argumentação."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5721,
+        "recall": 0.6842,
+        "f1": 0.6232
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao abordar a inimputabilidade e a aplicação de medida de segurança, mas poderia ser mais clara na explicação sobre a unificação da medida em relação aos delitos. As citações legais são adequadas, mas faltou mencionar o artigo que trata da inimputabilidade."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 5,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5377,
+        "recall": 0.6122,
+        "f1": 0.5725
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato apresenta teses relevantes e fundamentadas, embora algumas argumentações possam ser mais desenvolvidas. As citações legais estão corretas, mas poderiam ser mais precisas em relação aos dispositivos mencionados."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5734,
+        "recall": 0.6021,
+        "f1": 0.5874
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato apresenta uma tese correta e fundamentada, mas poderia ser mais completa ao mencionar a ausência de prova da materialidade do delito de corrupção de menores, conforme a referência. As citações legais são adequadas, mas faltam complementos que poderiam fortalecer a argumentação."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 3,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.622,
+        "recall": 0.7027,
+        "f1": 0.6599
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato apresenta uma tese correta sobre a nulidade da citação por edital, mas poderia ser mais completa ao mencionar a citação por hora certa. As citações legais estão corretas, mas faltam alguns detalhes sobre os artigos mencionados."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5156,
+        "recall": 0.6202,
+        "f1": 0.5631
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4825,
+        "recall": 0.6021,
+        "f1": 0.5357
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.596,
+        "recall": 0.6912,
+        "f1": 0.6401
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5282,
+        "recall": 0.6557,
+        "f1": 0.5851
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5907,
+        "recall": 0.7258,
+        "f1": 0.6513
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5995,
+        "recall": 0.8086,
+        "f1": 0.6885
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5279,
+        "recall": 0.623,
+        "f1": 0.5715
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 0,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Empty prediction or reference"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.682,
+        "recall": 0.8614,
+        "f1": 0.7613
+      },
+      "llm_judge": {
+        "correctness": 4.0,
+        "reasoning": 3.0,
+        "citations": 3.0,
+        "total": 10.0,
+        "normalized": 0.9091,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que o prazo para os embargos se inicia no dia útil seguinte à intimação da penhora, conforme a legislação aplicável. O raciocínio é claro e bem estruturado, embora a citação do artigo 16 da Lei nº 6.830/1980 poderia ser mais completa ao mencionar o inciso específico."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6625,
+        "recall": 0.693,
+        "f1": 0.6774
+      },
+      "llm_judge": {
+        "correctness": 3.0,
+        "reasoning": 2.0,
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que João não deve responder com seus bens pessoais pelo mero inadimplemento, mas a citação do artigo 134 do CTN, embora relevante, não é a mais precisa, pois o artigo 135, inciso III, é o que trata especificamente da responsabilidade do sócio-administrador em casos de infração. O raciocínio é claro, mas poderia ser mais estruturado."
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6394,
+        "recall": 0.8089,
+        "f1": 0.7142
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6774,
+        "recall": 0.669,
+        "f1": 0.6731
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 6,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5964,
+        "recall": 0.6243,
+        "f1": 0.6101
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5268,
+        "recall": 0.596,
+        "f1": 0.5593
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5806,
+        "recall": 0.6491,
+        "f1": 0.6129
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6317,
+        "recall": 0.6499,
+        "f1": 0.6407
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6542,
+        "recall": 0.7941,
+        "f1": 0.7174
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5711,
+        "recall": 0.6493,
+        "f1": 0.6077
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6362,
+        "recall": 0.6869,
+        "f1": 0.6606
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 1,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5529,
+        "recall": 0.6708,
+        "f1": 0.6062
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6671,
+        "recall": 0.6576,
+        "f1": 0.6623
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5515,
+        "recall": 0.7592,
+        "f1": 0.6389
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5729,
+        "recall": 0.6315,
+        "f1": 0.6007
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.596,
+        "recall": 0.717,
+        "f1": 0.6509
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5236,
+        "recall": 0.6727,
+        "f1": 0.5888
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5497,
+        "recall": 0.6024,
+        "f1": 0.5748
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5004,
+        "recall": 0.7112,
+        "f1": 0.5874
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5238,
+        "recall": 0.6866,
+        "f1": 0.5942
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5653,
+        "recall": 0.6389,
+        "f1": 0.5998
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 5,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5185,
+        "recall": 0.7287,
+        "f1": 0.6059
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 1,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5803,
+        "recall": 0.6845,
+        "f1": 0.6281
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6114,
+        "recall": 0.8158,
+        "f1": 0.699
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5318,
+        "recall": 0.7933,
+        "f1": 0.6367
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4979,
+        "recall": 0.7303,
+        "f1": 0.5921
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.484,
+        "recall": 0.6515,
+        "f1": 0.5554
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5413,
+        "recall": 0.6376,
+        "f1": 0.5855
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5689,
+        "recall": 0.7004,
+        "f1": 0.6278
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4616,
+        "recall": 0.5998,
+        "f1": 0.5217
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4722,
+        "recall": 0.596,
+        "f1": 0.5269
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5632,
+        "recall": 0.7241,
+        "f1": 0.6336
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5723,
+        "recall": 0.6651,
+        "f1": 0.6152
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5681,
+        "recall": 0.7333,
+        "f1": 0.6402
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5761,
+        "recall": 0.7202,
+        "f1": 0.6402
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5553,
+        "recall": 0.6928,
+        "f1": 0.6165
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5622,
+        "recall": 0.6672,
+        "f1": 0.6102
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5163,
+        "recall": 0.594,
+        "f1": 0.5524
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6065,
+        "recall": 0.6472,
+        "f1": 0.6262
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5862,
+        "recall": 0.7006,
+        "f1": 0.6383
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6322,
+        "recall": 0.6428,
+        "f1": 0.6375
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.483,
+        "recall": 0.5711,
+        "f1": 0.5233
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6157,
+        "recall": 0.7213,
+        "f1": 0.6643
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 3,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6657,
+        "recall": 0.7011,
+        "f1": 0.6829
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5265,
+        "recall": 0.6369,
+        "f1": 0.5765
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 5,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5981,
+        "recall": 0.6921,
+        "f1": 0.6416
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5996,
+        "recall": 0.6327,
+        "f1": 0.6157
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5256,
+        "recall": 0.7127,
+        "f1": 0.605
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5972,
+        "recall": 0.7354,
+        "f1": 0.6591
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4915,
+        "recall": 0.7878,
+        "f1": 0.6053
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 6,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6664,
+        "recall": 0.7316,
+        "f1": 0.6975
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5731,
+        "recall": 0.7287,
+        "f1": 0.6416
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5127,
+        "recall": 0.6737,
+        "f1": 0.5823
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5816,
+        "recall": 0.7445,
+        "f1": 0.6531
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4851,
+        "recall": 0.5793,
+        "f1": 0.528
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5187,
+        "recall": 0.6731,
+        "f1": 0.5859
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6632,
+        "recall": 0.6367,
+        "f1": 0.6497
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 1,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6113,
+        "recall": 0.5774,
+        "f1": 0.5939
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 1,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.571,
+        "recall": 0.6051,
+        "f1": 0.5876
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6505,
+        "recall": 0.6683,
+        "f1": 0.6593
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6559,
+        "recall": 0.7856,
+        "f1": 0.7149
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6717,
+        "recall": 0.6357,
+        "f1": 0.6532
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 0,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Empty prediction or reference"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4961,
+        "recall": 0.5142,
+        "f1": 0.505
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.548,
+        "recall": 0.6209,
+        "f1": 0.5821
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5292,
+        "recall": 0.6512,
+        "f1": 0.5839
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 6,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5732,
+        "recall": 0.6884,
+        "f1": 0.6256
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6753,
+        "recall": 0.7211,
+        "f1": 0.6975
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5544,
+        "recall": 0.6553,
+        "f1": 0.6007
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6102,
+        "recall": 0.7932,
+        "f1": 0.6898
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5421,
+        "recall": 0.5978,
+        "f1": 0.5686
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5827,
+        "recall": 0.799,
+        "f1": 0.6739
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4996,
+        "recall": 0.5486,
+        "f1": 0.523
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6154,
+        "recall": 0.6283,
+        "f1": 0.6218
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "predicted_count": 0,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Empty prediction or reference"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5731,
+        "recall": 0.732,
+        "f1": 0.6429
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.554,
+        "recall": 0.6504,
+        "f1": 0.5983
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6511,
+        "recall": 0.7526,
+        "f1": 0.6982
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6004,
+        "recall": 0.7097,
+        "f1": 0.6505
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.444,
+        "recall": 0.5807,
+        "f1": 0.5033
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4997,
+        "recall": 0.5184,
+        "f1": 0.5089
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.572,
+        "recall": 0.6467,
+        "f1": 0.6071
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4817,
+        "recall": 0.518,
+        "f1": 0.4992
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5198,
+        "recall": 0.6801,
+        "f1": 0.5892
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 0,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Empty prediction or reference"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5609,
+        "recall": 0.7543,
+        "f1": 0.6434
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5389,
+        "recall": 0.6736,
+        "f1": 0.5988
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5231,
+        "recall": 0.6093,
+        "f1": 0.5629
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6121,
+        "recall": 0.6934,
+        "f1": 0.6502
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5344,
+        "recall": 0.6385,
+        "f1": 0.5818
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5988,
+        "recall": 0.7419,
+        "f1": 0.6627
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 1,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.622,
+        "recall": 0.6247,
+        "f1": 0.6233
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6261,
+        "recall": 0.7713,
+        "f1": 0.6911
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.554,
+        "recall": 0.6043,
+        "f1": 0.5781
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4902,
+        "recall": 0.5261,
+        "f1": 0.5075
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.583,
+        "recall": 0.5703,
+        "f1": 0.5766
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4736,
+        "recall": 0.666,
+        "f1": 0.5536
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 5,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5537,
+        "recall": 0.6459,
+        "f1": 0.5962
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6673,
+        "recall": 0.6624,
+        "f1": 0.6648
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5899,
+        "recall": 0.6251,
+        "f1": 0.607
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5834,
+        "recall": 0.5807,
+        "f1": 0.582
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5921,
+        "recall": 0.6919,
+        "f1": 0.6381
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5984,
+        "recall": 0.6875,
+        "f1": 0.6399
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5604,
+        "recall": 0.6376,
+        "f1": 0.5965
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5743,
+        "recall": 0.7053,
+        "f1": 0.6331
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5424,
+        "recall": 0.5923,
+        "f1": 0.5663
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5738,
+        "recall": 0.7074,
+        "f1": 0.6336
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 2,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4305,
+        "recall": 0.6085,
+        "f1": 0.5043
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.2661,
+        "recall": 0.388,
+        "f1": 0.3157
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.4932,
+        "recall": 0.7043,
+        "f1": 0.5801
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 4,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5843,
+        "recall": 0.5685,
+        "f1": 0.5763
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 2,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.628,
+        "recall": 0.6507,
+        "f1": 0.6392
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.5961,
+        "recall": 0.7053,
+        "f1": 0.6461
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 6,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6203,
+        "recall": 0.6332,
+        "f1": 0.6267
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 0,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6282,
+        "recall": 0.7637,
+        "f1": 0.6893
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 0,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Empty prediction or reference"
+      }
+    },
+    {
+      "citation_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "predicted_count": 3,
+        "expected_count": 1,
+        "matched_count": 0
+      },
+      "bertscore": {
+        "precision": 0.6029,
+        "recall": 0.6325,
+        "f1": 0.6173
+      },
+      "llm_judge": {
+        "correctness": 0.0,
+        "reasoning": 0.0,
+        "citations": 0.0,
+        "total": 0.0,
+        "normalized": 0.0,
+        "justification": "Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"
+      }
+    }
+  ]
+}
