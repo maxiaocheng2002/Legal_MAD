@@ -35,7 +35,7 @@ def create_client(provider: str = "openrouter", model: str = None, max_tokens: i
     """
     if provider == "groq":
         from src.utils.api_client_experimental import GroqClient
-        default_model = "llama-3.1-8b-instant"
+        default_model = "qwen/qwen-2.5-72b-instruct"
         return GroqClient(
             model=model or default_model,
             max_tokens=max_tokens,
@@ -44,7 +44,7 @@ def create_client(provider: str = "openrouter", model: str = None, max_tokens: i
         )
     elif provider == "openrouter":
         from src.utils.api_client_experimental import OpenRouterClient
-        default_model = "meta-llama/llama-3.3-70b-instruct:free"
+        default_model = "qwen/qwen-2.5-72b-instruct"
         return OpenRouterClient(
             model=model or default_model,
             max_tokens=max_tokens,
