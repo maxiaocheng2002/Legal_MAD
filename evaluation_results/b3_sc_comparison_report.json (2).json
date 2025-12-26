@@ -1,0 +1,78 @@
+{
+  "baseline_oab_sc_200_groq_llama-3.1-8b-instant": {
+    "citation_f1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "bertscore": {
+      "precision": 0.5956,
+      "recall": 0.5387,
+      "f1": 0.5624
+    },
+    "llm_judge": {
+      "correctness": 1.8393,
+      "reasoning": 1.6607,
+      "citations": 0.4405,
+      "total": 3.9405,
+      "normalized": 0.3582
+    }
+  },
+  "baseline_oab_sc_200_groq_llama-3.3-70b-versatile": {
+    "citation_f1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "bertscore": {
+      "precision": 0.5775,
+      "recall": 0.5896,
+      "f1": 0.5814
+    },
+    "llm_judge": {
+      "correctness": 2.5179,
+      "reasoning": 1.9881,
+      "citations": 0.9583,
+      "total": 5.4643,
+      "normalized": 0.4967
+    }
+  },
+  "baseline_oab_sc_200_openrouter_default": {
+    "citation_f1": {
+      "precision": 0.0006,
+      "recall": 0.0083,
+      "f1": 0.0012
+    },
+    "bertscore": {
+      "precision": 0.5713,
+      "recall": 0.6378,
+      "f1": 0.6011
+    },
+    "llm_judge": {
+      "correctness": 2.6198,
+      "reasoning": 2.0909,
+      "citations": 1.8843,
+      "total": 6.595,
+      "normalized": 0.5996
+    }
+  },
+  "baseline_oab_sc_200_openrouter_mistralaimistral-7b-instruct": {
+    "citation_f1": {
+      "precision": 0.0003,
+      "recall": 0.0031,
+      "f1": 0.0005
+    },
+    "bertscore": {
+      "precision": 0.5567,
+      "recall": 0.654,
+      "f1": 0.5997
+    },
+    "llm_judge": {
+      "correctness": 2.805,
+      "reasoning": 2.2327,
+      "citations": 2.5346,
+      "total": 7.5723,
+      "normalized": 0.6884
+    }
+  }
+}

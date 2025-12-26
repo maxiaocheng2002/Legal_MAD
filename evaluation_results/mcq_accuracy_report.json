@@ -1,0 +1,74 @@
+{
+  "mad_vanilla_bar_exam_qa_500_mistralai_mistral-7b-instruct": {
+    "experiment": "mad_vanilla_bar_exam_qa_500_mistralai_mistral-7b-instruct",
+    "total_questions": 389,
+    "valid_questions": 389,
+    "errors": 0,
+    "correct": 259,
+    "incorrect": 130,
+    "accuracy": 66.58
+  },
+  "mad_vanilla_bar_exam_qa_500_qwen_qwen-2.5-72b-instruct": {
+    "experiment": "mad_vanilla_bar_exam_qa_500_qwen_qwen-2.5-72b-instruct",
+    "total_questions": 493,
+    "valid_questions": 493,
+    "errors": 0,
+    "correct": 323,
+    "incorrect": 170,
+    "accuracy": 65.52
+  },
+  "mad_bar_exam_qa_500": {
+    "experiment": "mad_bar_exam_qa_500",
+    "total_questions": 483,
+    "valid_questions": 483,
+    "errors": 0,
+    "correct": 243,
+    "incorrect": 240,
+    "accuracy": 50.31
+  },
+  "mad_irac_hybrid_bar_exam_qa_500_mistralai_mistral-7b-instruct": {
+    "experiment": "mad_irac_hybrid_bar_exam_qa_500_mistralai_mistral-7b-instruct",
+    "total_questions": 427,
+    "valid_questions": 427,
+    "errors": 0,
+    "correct": 250,
+    "incorrect": 177,
+    "accuracy": 58.55
+  },
+  "mad_irac_hybrid_bar_exam_qa_500_llama-3.3-70b-versatile": {
+    "experiment": "mad_irac_hybrid_bar_exam_qa_500_llama-3.3-70b-versatile",
+    "total_questions": 500,
+    "valid_questions": 500,
+    "errors": 0,
+    "correct": 375,
+    "incorrect": 125,
+    "accuracy": 75.0
+  },
+  "mad_irac_hybrid_bar_exam_qa_500": {
+    "experiment": "mad_irac_hybrid_bar_exam_qa_500",
+    "total_questions": 497,
+    "valid_questions": 497,
+    "errors": 0,
+    "correct": 237,
+    "incorrect": 260,
+    "accuracy": 47.69
+  },
+  "mad_irac_hybrid_bar_exam_qa_500_qwen_qwen-2.5-72b-instruct": {
+    "experiment": "mad_irac_hybrid_bar_exam_qa_500_qwen_qwen-2.5-72b-instruct",
+    "total_questions": 486,
+    "valid_questions": 486,
+    "errors": 0,
+    "correct": 325,
+    "incorrect": 161,
+    "accuracy": 66.87
+  },
+  "mad_vanilla_bar_exam_qa_500_llama-3.3-70b-versatile": {
+    "experiment": "mad_vanilla_bar_exam_qa_500_llama-3.3-70b-versatile",
+    "total_questions": 496,
+    "valid_questions": 496,
+    "errors": 0,
+    "correct": 368,
+    "incorrect": 128,
+    "accuracy": 74.19
+  }
+}

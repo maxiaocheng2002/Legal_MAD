@@ -1,0 +1,124 @@
+{
+  "source_file": "metrics_mad_oab_vanilla_200_llama-3.3-70b-versatile.json",
+  "total_questions": 168,
+  "total_categories": 7,
+  "by_category": {
+    "Direito Administrativo": {
+      "count": 24,
+      "aggregated_metrics": {
+        "citation_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bertscore": {
+          "precision": 0.6147,
+          "recall": 0.711,
+          "f1": 0.6583
+        }
+      }
+    },
+    "Direito Civil": {
+      "count": 24,
+      "aggregated_metrics": {
+        "citation_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bertscore": {
+          "precision": 0.569,
+          "recall": 0.6765,
+          "f1": 0.6161
+        }
+      }
+    },
+    "Direito Constitucional": {
+      "count": 24,
+      "aggregated_metrics": {
+        "citation_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bertscore": {
+          "precision": 0.5399,
+          "recall": 0.6761,
+          "f1": 0.5994
+        }
+      }
+    },
+    "Direito Do Trabalho": {
+      "count": 24,
+      "aggregated_metrics": {
+        "citation_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bertscore": {
+          "precision": 0.5276,
+          "recall": 0.6309,
+          "f1": 0.5735
+        }
+      }
+    },
+    "Direito Empresarial": {
+      "count": 24,
+      "aggregated_metrics": {
+        "citation_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bertscore": {
+          "precision": 0.5698,
+          "recall": 0.6832,
+          "f1": 0.6202
+        }
+      }
+    },
+    "Direito Penal": {
+      "count": 24,
+      "aggregated_metrics": {
+        "citation_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bertscore": {
+          "precision": 0.5716,
+          "recall": 0.6447,
+          "f1": 0.6044
+        }
+      }
+    },
+    "Direito Tributario": {
+      "count": 24,
+      "aggregated_metrics": {
+        "citation_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bertscore": {
+          "precision": 0.6197,
+          "recall": 0.6941,
+          "f1": 0.6535
+        }
+      }
+    }
+  },
+  "overall_metrics": {
+    "citation_f1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "bertscore": {
+      "precision": 0.5732,
+      "recall": 0.6738,
+      "f1": 0.6179
+    }
+  }
+}

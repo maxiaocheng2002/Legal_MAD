@@ -1,0 +1,78 @@
+{
+  "mad_oab_vanilla_200_llama-3.3-70b-versatile": {
+    "citation_f1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "bertscore": {
+      "precision": 0.5732,
+      "recall": 0.6738,
+      "f1": 0.6179
+    },
+    "llm_judge": {
+      "correctness": 2.619,
+      "reasoning": 2.0952,
+      "citations": 2.744,
+      "total": 7.4583,
+      "normalized": 0.678
+    }
+  },
+  "mad_oab_vanilla_200_mistralai_mistral-7b-instruct": {
+    "citation_f1": {
+      "precision": 0.0113,
+      "recall": 0.0422,
+      "f1": 0.0174
+    },
+    "bertscore": {
+      "precision": 0.5504,
+      "recall": 0.6885,
+      "f1": 0.6104
+    },
+    "llm_judge": {
+      "correctness": 3.0909,
+      "reasoning": 2.487,
+      "citations": 3.2208,
+      "total": 8.7987,
+      "normalized": 0.7999
+    }
+  },
+  "mad_oab_vanilla_200_qwen_qwen-2.5-72b-instruct": {
+    "citation_f1": {
+      "precision": 0.0061,
+      "recall": 0.0123,
+      "f1": 0.0082
+    },
+    "bertscore": {
+      "precision": 0.579,
+      "recall": 0.6689,
+      "f1": 0.6194
+    },
+    "llm_judge": {
+      "correctness": 2.7117,
+      "reasoning": 2.1534,
+      "citations": 2.8221,
+      "total": 7.6871,
+      "normalized": 0.6988
+    }
+  },
+  "mad_oab_vanilla_200_llama-3.1-8b-instant": {
+    "citation_f1": {
+      "precision": 0.0029,
+      "recall": 0.0087,
+      "f1": 0.0043
+    },
+    "bertscore": {
+      "precision": 0.5469,
+      "recall": 0.6369,
+      "f1": 0.587
+    },
+    "llm_judge": {
+      "correctness": 2.0348,
+      "reasoning": 1.8435,
+      "citations": 2.0435,
+      "total": 5.9217,
+      "normalized": 0.5384
+    }
+  }
+}
