@@ -29,7 +29,7 @@ Desenvolva uma resposta completa e fundamentada, estruturada em IRAC (Issue, Rul
 - Application: Aplique as normas aos fatos apresentados
 - Conclusion: Conclua de forma clara e objetiva
 
-Responda em JSON válido (sem texto fora do JSON):
+Responda em JSON:
 {{
   "irac": {{
     "issue": "Questão jurídica identificada (2-3 frases)",
@@ -87,7 +87,7 @@ Apresente uma perspectiva DIFERENTE ou abordagem ALTERNATIVA para esta mesma que
 
 Desenvolva sua resposta em IRAC (Issue, Rule, Application, Conclusion):
 
-Responda em JSON válido (sem texto fora do JSON):
+Responda em JSON:
 {{
   "irac": {{
     "issue": "Questão jurídica identificada (pode ser diferente da do oponente)",
