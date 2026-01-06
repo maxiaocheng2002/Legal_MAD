@@ -15,11 +15,11 @@
       "f1": 0.5997
     },
     "llm_judge": {
-      "correctness": 2.8239,
-      "reasoning": 2.2264,
+      "correctness": 2.8553,
+      "reasoning": 2.2327,
       "citations": 2.5472,
-      "total": 7.5975,
-      "normalized": 0.6907
+      "total": 7.6352,
+      "normalized": 0.6941
     }
   },
   "per_question_metrics": [
@@ -38,13 +38,15 @@
         "f1": 0.6904
       },
       "llm_judge": {
-        "correctness": 4.0,
-        "reasoning": 3.0,
+        "correctness": 3.0,
+        "reasoning": 2.0,
         "citations": 3.0,
-        "total": 10.0,
-        "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa, abordando a obrigatoriedade da matriz de alocação de riscos e sua importância, embora tenha mencionado artigos que não são os mais diretamente relevantes. O raciocínio é claro e bem estruturado, mas poderia ser ainda mais aprofundado."
-      }
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que o edital deve conter a matriz de alocação de riscos, mas poderia ser mais precisa ao mencionar o artigo específico que trata da obrigatoriedade dessa matriz. O raciocínio é claro, mas não segue uma estrutura formal como IRAC."
+      },
+      "question_id": "39_direito_administrativo_questao_1_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -66,8 +68,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que a exigência de programa de integridade pode ser feita, mas poderia ser mais precisa ao mencionar o artigo específico que trata da obrigatoriedade em contratos de grande vulto. O raciocínio é claro, mas poderia ser mais estruturado."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a exigência de programa de integridade pode ser feita, mas poderia ser mais precisa ao mencionar o artigo específico que trata da obrigatoriedade em contratos de grande vulto. O raciocínio é claro, mas não segue uma estrutura formal como IRAC."
+      },
+      "question_id": "39_direito_administrativo_questao_1_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -90,7 +94,9 @@
         "total": 11.0,
         "normalized": 1.0,
         "justification": "A resposta do candidato está correta e completa, fundamentando-se adequadamente na legislação pertinente e abordando a questão da rescisão do contrato administrativo de forma clara e estruturada."
-      }
+      },
+      "question_id": "39_direito_administrativo_questao_2_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -112,8 +118,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e aborda os direitos do contratado, mas não menciona a devolução da garantia e o custo da desmobilização, que são direitos específicos previstos na legislação. O raciocínio é claro, mas poderia ser mais estruturado em relação aos direitos e à forma de rescisão."
-      }
+        "justification": "A resposta do candidato está correta e aborda os direitos do contratado, mas inclui elementos que não são estritamente necessários, como a rescisão unilateral e a possibilidade de ação judicial, que não foram mencionados na resposta de referência. As citações legais estão corretas, mas faltam complementos que poderiam enriquecer a argumentação."
+      },
+      "question_id": "39_direito_administrativo_questao_2_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -135,8 +143,10 @@
         "citations": 4.0,
         "total": 11.0,
         "normalized": 1.0,
-        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando a responsabilidade de Jaqueline e as implicações legais de sua omissão. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado em alguns aspectos."
-      }
+        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando a responsabilidade de Jaqueline de acordo com a Constituição Federal. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado em alguns aspectos."
+      },
+      "question_id": "39_direito_administrativo_questao_3_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -158,8 +168,10 @@
         "citations": 4.0,
         "total": 11.0,
         "normalized": 1.0,
-        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando o prazo de interposição do recurso e a situação da notificação pela Administração Pública. As citações legais estão corretas e bem aplicadas ao contexto apresentado."
-      }
+        "justification": "A resposta do candidato está correta e completa, abordando o prazo de interposição do recurso e a fundamentação legal pertinente, além de mencionar princípios relevantes do processo administrativo."
+      },
+      "question_id": "39_direito_administrativo_questao_4_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -181,8 +193,10 @@
         "citations": 2.0,
         "total": 9.0,
         "normalized": 0.8182,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando o poder-dever de autotutela da Administração e a questão da preclusão. No entanto, faltaram citações específicas de dispositivos legais, como o Art. 63, §2º da Lei nº 9.784/99, que poderiam fortalecer a argumentação."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando o poder-dever de autotutela da Administração e a questão da preclusão. No entanto, faltaram citações específicas de dispositivos legais, como o Art. 63, §2º, da Lei nº 9.784/99, que poderiam fortalecer a argumentação."
+      },
+      "question_id": "39_direito_administrativo_questao_4_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -201,11 +215,13 @@
       "llm_judge": {
         "correctness": 3.0,
         "reasoning": 2.0,
-        "citations": 1.0,
-        "total": 6.0,
-        "normalized": 0.5455,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que Maria não pode usucapir o imóvel, mas não menciona explicitamente a questão do animus domini, que é crucial. A citação legal sobre os requisitos da usucapião está incorreta, pois não menciona o artigo correto do Código Civil."
-      }
+        "citations": 2.0,
+        "total": 7.0,
+        "normalized": 0.6364,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que Maria não pode usucapir o imóvel, mas não menciona explicitamente a questão do animus domini, que é crucial. A citação legal sobre os requisitos da usucapião está imprecisa, pois não menciona o artigo específico do Código Civil que trata do animus domini."
+      },
+      "question_id": "39_direito_civil_questao_1_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -227,8 +243,10 @@
         "citations": 0.0,
         "total": 5.0,
         "normalized": 0.4545,
-        "justification": "A resposta do candidato está correta ao afirmar que João pode alegar a precariedade da posse de Maria, mas não faz referência ao direito de reconvenção previsto no CPC, o que a torna incompleta. Além disso, não há citações legais que sustentem a argumentação apresentada."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que João pode solicitar a restituição do imóvel, mas não apresenta citações legais que sustentem sua argumentação, o que limita a fundamentação jurídica."
+      },
+      "question_id": "39_direito_civil_questao_1_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -247,11 +265,13 @@
       "llm_judge": {
         "correctness": 4.0,
         "reasoning": 3.0,
-        "citations": 3.0,
-        "total": 10.0,
-        "normalized": 0.9091,
-        "justification": "A resposta do candidato apresenta todos os passos necessários para a adoção plena, incluindo a destituição do poder familiar e a retificação da certidão de nascimento, demonstrando um raciocínio claro e estruturado, embora algumas citações legais poderiam ser mais completas."
-      }
+        "citations": 4.0,
+        "total": 11.0,
+        "normalized": 1.0,
+        "justification": "A resposta do candidato apresenta uma análise completa e correta do procedimento de adoção, incluindo os passos necessários e a fundamentação legal pertinente, demonstrando um raciocínio claro e estruturado."
+      },
+      "question_id": "39_direito_civil_questao_2_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -273,8 +293,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao indicar o foro da residência de Tália, mas poderia ser mais clara ao relacionar a competência com a guarda. As citações legais são adequadas, mas faltam complementos em alguns artigos mencionados."
-      }
+        "justification": "A resposta do candidato está correta e completa ao indicar o foro da residência de Tália, mas poderia ser mais precisa ao mencionar que a guarda é dos tios. As citações legais são adequadas, mas faltam complementos que poderiam enriquecer a fundamentação."
+      },
+      "question_id": "39_direito_civil_questao_2_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -296,8 +318,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando os direitos de Maria de acordo com a LGPD, embora poderia ser mais completa ao detalhar a relação entre controladora e operadora."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando o direito de eliminação de dados e a revogação do consentimento, embora pudesse ser mais completa ao mencionar explicitamente os artigos citados na resposta de referência."
+      },
+      "question_id": "39_direito_civil_questao_3_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -319,8 +343,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa, abordando a responsabilidade solidária do operador e a violação do direito à eliminação, embora a citação do artigo 42 da LGPD poderia ser mais precisa ao incluir o parágrafo e inciso mencionados na resposta de referência."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a responsabilidade solidária do operador e a violação do direito à eliminação. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado. As citações legais são precisas, mas faltaram alguns complementos."
+      },
+      "question_id": "39_direito_civil_questao_3_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -342,8 +368,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa, mas a menção ao prazo de 2 anos sem protesto, embora correta, não é necessária para a questão, o que a torna um pouco superficial. As citações legais estão corretas, mas poderiam ser mais completas."
-      }
+        "justification": "A resposta do candidato está correta e completa ao indicar a execução de título extrajudicial e o prazo prescricional de 6 meses, mas a menção ao prazo de 2 anos sem protesto, embora correta, não é necessária para a questão específica, o que a torna um pouco superficial."
+      },
+      "question_id": "39_direito_civil_questao_4_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -365,8 +393,10 @@
         "citations": 2.0,
         "total": 4.0,
         "normalized": 0.3636,
-        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a penhorabilidade do táxi, desconsiderando que ele é um bem necessário ao exercício da profissão, conforme o Art. 833, inciso V, do CPC. Além disso, a argumentação sobre a avaliação da proporcionalidade não se aplica ao caso, pois o bem é impenhorável."
-      }
+        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a penhorabilidade do táxi, pois não considera que, sendo instrumento de trabalho, ele é impenhorável conforme o Art. 833, inciso V, do CPC. Além disso, a argumentação sobre a avaliação da proporcionalidade não se aplica ao caso, pois o bem é protegido pela impenhorabilidade."
+      },
+      "question_id": "39_direito_civil_questao_4_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -388,8 +418,10 @@
         "citations": 2.0,
         "total": 5.0,
         "normalized": 0.4545,
-        "justification": "A resposta do candidato apresenta uma interpretação errônea da hierarquia das leis, pois a Lei Complementar pode ser alterada por lei ordinária, mas a argumentação é clara e estruturada, embora não cite corretamente os dispositivos constitucionais relevantes."
-      }
+        "justification": "A resposta do candidato apresenta uma interpretação errônea da hierarquia das leis, pois a Lei Complementar pode ser alterada por lei ordinária. O raciocínio é claro, mas não fundamenta adequadamente a posição adotada."
+      },
+      "question_id": "39_direito_constitucional_questao_1_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -408,11 +440,13 @@
       "llm_judge": {
         "correctness": 2.0,
         "reasoning": 2.0,
-        "citations": 1.0,
-        "total": 5.0,
-        "normalized": 0.4545,
-        "justification": "A resposta do candidato apresenta uma análise correta sobre a impossibilidade de ajuizar ADI, mas sugere o controle difuso sem abordar a legitimidade ativa da sociedade empresária para tal. A citação legal é inadequada, pois não menciona o artigo 103 da Constituição que trata da legitimidade para o controle concentrado."
-      }
+        "citations": 0.0,
+        "total": 4.0,
+        "normalized": 0.3636,
+        "justification": "A resposta do candidato apresenta uma análise correta sobre a falta de legitimidade da sociedade empresária para a ADI, mas sugere o controle difuso sem abordar a questão da legitimidade ativa para tal, além de não citar dispositivos legais relevantes."
+      },
+      "question_id": "39_direito_constitucional_questao_1_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -434,8 +468,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que o aumento da gratificação é inconstitucional, mas poderia ter aprofundado mais sobre a violação do princípio da especialidade. As citações legais são adequadas, mas faltou a menção ao inciso do artigo 63."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que o aumento da gratificação é inconstitucional, mas poderia ter explorado mais a questão da violação do princípio da especialidade. As citações legais estão corretas, mas faltaram alguns complementos."
+      },
+      "question_id": "39_direito_constitucional_questao_2_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -458,7 +494,9 @@
         "total": 0.0,
         "normalized": 0.0,
         "justification": "Empty prediction or reference"
-      }
+      },
+      "question_id": "39_direito_constitucional_questao_2_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -476,12 +514,14 @@
       },
       "llm_judge": {
         "correctness": 1.0,
-        "reasoning": 1.0,
+        "reasoning": 2.0,
         "citations": 2.0,
-        "total": 4.0,
-        "normalized": 0.3636,
-        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a legitimidade dos senadores, pois a iniciativa legislativa para normas sobre Forças Armadas é privativa do Presidente da República, conforme o Art. 61, § 1º, inciso I da CF/88. Além disso, a citação do artigo 49, I, não é suficiente para justificar a validade da iniciativa apresentada pelos senadores."
-      }
+        "total": 5.0,
+        "normalized": 0.4545,
+        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a legitimidade dos senadores, pois a iniciativa legislativa sobre normas gerais para o emprego das Forças Armadas é privativa do Presidente da República, conforme o Art. 61, § 1º, inciso I, da CF/88. Embora mencione artigos da Constituição, a fundamentação não é suficiente para sustentar a validade da iniciativa apresentada pelos senadores."
+      },
+      "question_id": "39_direito_constitucional_questao_3_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -503,8 +543,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa, identificando o vício formal na aprovação do projeto de lei complementar. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado, e a citação do artigo 69 da Constituição é adequada, mas poderia incluir mais informações sobre a maioria absoluta."
-      }
+        "justification": "A resposta do candidato está correta e completa, identificando o vício formal na aprovação do projeto de lei complementar e explicando a necessidade de maioria absoluta. O raciocínio é claro e estruturado, embora pudesse ser mais detalhado. A citação do artigo 69 é correta, mas faltou mencionar que se trata de uma lei complementar especificamente."
+      },
+      "question_id": "39_direito_constitucional_questao_3_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -527,7 +569,9 @@
         "total": 4.0,
         "normalized": 0.3636,
         "justification": "A resposta do candidato apresenta medidas que podem ser adotadas, mas não menciona a possibilidade de sustação do decreto pelo Congresso Nacional, que é a medida correta e específica para o caso. Além disso, não há citações legais que sustentem as alternativas apresentadas."
-      }
+      },
+      "question_id": "39_direito_constitucional_questao_4_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -549,8 +593,10 @@
         "citations": 3.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta uma argumentação que, embora incorreta ao afirmar que a ADI é cabível, demonstra compreensão dos princípios constitucionais envolvidos. As citações legais são relevantes, mas não estão completas em relação ao contexto da questão."
-      }
+        "justification": "A resposta do candidato apresenta uma argumentação válida sobre a possibilidade de Ação Direta de Inconstitucionalidade, mas confunde controle de legalidade com controle de constitucionalidade, o que a torna incompleta. As citações legais são relevantes, mas não estão totalmente corretas em relação ao contexto da questão."
+      },
+      "question_id": "39_direito_constitucional_questao_4_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -572,8 +618,10 @@
         "citations": 2.0,
         "total": 9.0,
         "normalized": 0.8182,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a ausência de cláusula de exclusividade e a falta de má-fé. No entanto, não citou o artigo 726 do Código Civil, que é essencial para a fundamentação completa."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a ausência de cláusula de exclusividade e a falta de má-fé. No entanto, não citou o artigo 726 do Código Civil, que é central para a questão."
+      },
+      "question_id": "39_direito_empresarial_questao_1_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -595,8 +643,10 @@
         "citations": 2.0,
         "total": 9.0,
         "normalized": 0.8182,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a natureza do contrato de corretagem e a ausência de relação de dependência. No entanto, faltou a citação do artigo específico do Código Civil que trata da corretagem, o que poderia ter elevado a nota na parte de citações."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a natureza do contrato de corretagem e a ausência de relação de dependência. No entanto, faltou a citação do artigo específico do Código Civil que trata da corretagem, o que poderia enriquecer a argumentação."
+      },
+      "question_id": "39_direito_empresarial_questao_1_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -618,8 +668,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, explicando que a sociedade em conta de participação não adquire personalidade jurídica com o registro. O raciocínio é claro e estruturado, embora pudesse ser mais detalhado. As citações legais são adequadas, mas poderiam incluir mais detalhes sobre os artigos mencionados."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a sociedade não se tornará pessoa jurídica, fundamentando-se no conceito de sociedade em conta de participação. O raciocínio é claro e estruturado, embora pudesse ser mais detalhado, e as citações legais são pertinentes, mas faltam complementos."
+      },
+      "question_id": "39_direito_empresarial_questao_2_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -638,11 +690,13 @@
       "llm_judge": {
         "correctness": 3.0,
         "reasoning": 2.0,
-        "citations": 2.0,
-        "total": 7.0,
-        "normalized": 0.6364,
-        "justification": "A resposta do candidato está correta ao afirmar que a contribuição é patrimonial, mas não menciona explicitamente que se trata de patrimônio especial, conforme o Art. 994 do Código Civil. O raciocínio é claro, mas poderia ser mais estruturado e fundamentado."
-      }
+        "citations": 1.0,
+        "total": 6.0,
+        "normalized": 0.5455,
+        "justification": "A resposta do candidato está correta ao afirmar que a contribuição é patrimonial, mas não menciona o artigo específico do Código Civil que define a natureza da contribuição como patrimônio especial, o que a torna incompleta. O raciocínio é claro, mas poderia ser mais estruturado."
+      },
+      "question_id": "39_direito_empresarial_questao_2_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -664,8 +718,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, explicando que o encerramento da falência só é possível após a realização do ativo e pagamento dos credores, conforme os artigos citados da Lei de Falências. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando os artigos pertinentes da Lei de Falências e explicando a impossibilidade do pedido da falida. O raciocínio é claro e estruturado, embora pudesse ser mais detalhado em algumas partes."
+      },
+      "question_id": "39_direito_empresarial_questao_3_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -687,8 +743,10 @@
         "citations": 3.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta uma fundamentação correta, mas não menciona o prazo de 5 dias para manifestação dos credores, que é essencial. As citações legais estão corretas, mas faltam detalhes sobre a manifestação dos credores e o papel do administrador judicial e do Ministério Público."
-      }
+        "justification": "A resposta do candidato apresenta uma abordagem correta, mas não menciona o prazo de 5 dias para manifestação, que é essencial. As citações legais estão corretas, mas faltam complementos e a referência ao artigo 159, que é mais pertinente ao caso."
+      },
+      "question_id": "39_direito_empresarial_questao_3_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -710,8 +768,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta ao afirmar que a cláusula não é necessariamente abusiva, mas poderia ser mais direta ao abordar a limitação da responsabilidade do transportador. As citações legais são relevantes, mas poderiam ser mais precisas em relação ao contexto da questão."
-      }
+        "justification": "A resposta do candidato está correta ao afirmar que a cláusula não é necessariamente abusiva, mas poderia ser mais direta ao abordar a limitação da responsabilidade do transportador. As citações legais são pertinentes, mas poderiam ser mais completas."
+      },
+      "question_id": "39_direito_empresarial_questao_4_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -733,8 +793,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato está correta ao afirmar que o remetente pode alterar a destinação, mas não menciona a necessidade de pagamento de despesas e perdas, o que a torna incompleta. A citação do artigo 741 é inadequada, pois o artigo relevante é o 748 do Código Civil."
-      }
+        "justification": "A resposta do candidato está correta ao afirmar que o remetente pode alterar a destinação, mas não menciona a necessidade de compensação ao transportador, o que é essencial. A citação do artigo 741 é inadequada, pois o artigo relevante é o 748 do Código Civil."
+      },
+      "question_id": "39_direito_empresarial_questao_4_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -756,8 +818,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta argumentos válidos, como a tentativa e a atipicidade, mas não aborda a exclusão de atos com motivação política prevista na Lei nº 13.260/2016. As citações legais são pertinentes, mas não estão completas em relação aos dispositivos mencionados."
-      }
+        "justification": "A resposta do candidato apresenta argumentos válidos, como a tentativa e a atipicidade, mas não aborda a exclusão de atos com motivação política prevista na Lei nº 13.260/2016. As citações legais são relevantes, mas não estão completas, especialmente em relação ao artigo que trata do terrorismo."
+      },
+      "question_id": "39_direito_penal_questao_1_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -779,8 +843,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato apresenta um argumento válido sobre a ilegalidade da infiltração policial, mas não menciona especificamente a Lei nº 12.850/13, que é crucial para a fundamentação completa. O raciocínio é claro, mas poderia ser mais estruturado."
-      }
+        "justification": "A resposta do candidato apresenta um argumento válido sobre a ilegalidade da infiltração policial, mas não menciona a Lei nº 12.850/13, que é crucial para a fundamentação completa. O raciocínio é claro, mas poderia ser mais estruturado."
+      },
+      "question_id": "39_direito_penal_questao_1_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -802,8 +868,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta ao indicar a necessidade de um exame de sanidade mental e menciona o artigo correto do CPP, mas poderia ser mais clara sobre a necessidade de suscitar o incidente de insanidade mental. As citações legais são adequadas, mas faltam alguns detalhes sobre o procedimento."
-      }
+        "justification": "A resposta do candidato está correta e completa ao identificar a necessidade de um exame de sanidade mental, mas poderia ser mais clara sobre o procedimento do incidente de insanidade mental. As citações legais são adequadas, mas faltam alguns detalhes sobre o processo."
+      },
+      "question_id": "39_direito_penal_questao_2_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -825,8 +893,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta ao afirmar que a medida de segurança substitui a pena, mas menciona o artigo 98, que se refere a medidas de segurança, enquanto o artigo 97 é mais apropriado para a questão. O raciocínio é claro, mas poderia ser mais estruturado."
-      }
+        "justification": "A resposta do candidato está correta ao afirmar que Manoela seria submetida a medida de segurança, mas menciona o artigo 98, que não é o mais adequado, pois o artigo 97 é o que trata das medidas de segurança em geral. O raciocínio é claro, mas poderia ser mais estruturado."
+      },
+      "question_id": "39_direito_penal_questao_2_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -848,8 +918,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta teses relevantes e corretas, mas carece de uma fundamentação mais robusta e específica em relação à jurisprudência e à aplicação das causas de aumento. As citações legais são pertinentes, mas não estão completas em relação aos dispositivos mencionados na resposta de referência."
-      }
+        "justification": "A resposta do candidato apresenta teses relevantes e corretas, mas carece de uma fundamentação mais robusta e precisa, especialmente em relação à jurisprudência mencionada na resposta de referência. As citações legais são adequadas, mas não são tão completas quanto poderiam ser."
+      },
+      "question_id": "39_direito_penal_questao_3_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -871,8 +943,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato apresenta uma tese correta e fundamentada na insuficiência de provas, mas não menciona a ausência de prova documental idônea, que é um ponto importante. As citações legais são adequadas, mas poderiam ser mais completas."
-      }
+        "justification": "A resposta do candidato apresenta uma tese correta e fundamentada, mas não menciona a ausência de prova documental idônea, que é um ponto importante. As citações legais são adequadas, mas poderiam ser mais completas."
+      },
+      "question_id": "39_direito_penal_questao_3_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -894,8 +968,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato apresenta corretamente a tese da ausência de nexo causal, fundamentando-se no Código Penal e mencionando a jurisprudência do STJ, embora a citação do artigo 13 poderia ser mais completa com a inclusão do parágrafo. O raciocínio é claro e bem estruturado, mas poderia ser ainda mais aprofundado."
-      }
+        "justification": "A resposta do candidato apresenta corretamente a tese da ausência de nexo causal, fundamentando-a com o artigo 13 do Código Penal e mencionando a jurisprudência do STJ, embora a citação do artigo poderia ser mais completa com a inclusão do parágrafo. O raciocínio é claro e bem estruturado, mas poderia ser ainda mais aprofundado."
+      },
+      "question_id": "39_direito_penal_questao_4_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -917,8 +993,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que a citação por edital é inválida, mas poderia ter detalhado mais sobre a necessidade de esgotar as diligências. As citações legais estão corretas, mas faltaram complementos que poderiam enriquecer a argumentação."
-      }
+        "justification": "A resposta do candidato está correta e completa ao identificar a nulidade da citação por edital, mas poderia ser mais clara ao explicar a aplicação do Art. 361 do CPP. As citações legais estão corretas, mas faltaram alguns detalhes sobre o procedimento."
+      },
+      "question_id": "39_direito_penal_questao_4_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -940,8 +1018,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato apresenta uma tese jurídica correta e completa, abordando a prescrição e a quitação, mas poderia ser mais clara na estruturação do raciocínio. As citações legais são pertinentes, mas faltam alguns complementos que poderiam fortalecer a argumentação."
-      }
+        "justification": "A resposta do candidato apresenta uma tese jurídica correta e completa, abordando a prescrição e a quitação, mas poderia ser mais clara na estruturação do raciocínio. As citações legais são pertinentes, mas faltam alguns complementos que poderiam enriquecer a argumentação."
+      },
+      "question_id": "39_direito_do_trabalho_questao_1_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -963,8 +1043,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato apresenta uma tese processual correta e completa, mas poderia ser mais clara em relação à fundamentação específica da admissibilidade do documento novo. As citações legais são adequadas, mas a referência ao art. 439 do CPC/2015 não é a mais precisa, pois a Súmula 8 do TST ou o art. 435 do CPC seriam mais apropriados."
-      }
+        "justification": "A resposta do candidato apresenta a tese processual correta e fundamenta a relevância do documento novo, mas menciona o artigo 439 do CPC, que não é o mais adequado para a situação, pois a referência correta seria ao artigo 435. O raciocínio é claro, mas poderia ser mais estruturado."
+      },
+      "question_id": "39_direito_do_trabalho_questao_1_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -983,11 +1065,13 @@
       "llm_judge": {
         "correctness": 2.0,
         "reasoning": 2.0,
-        "citations": 3.0,
-        "total": 7.0,
-        "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta uma interpretação incorreta ao afirmar que a aposentadoria por incapacidade permanente extingue o contrato de trabalho, quando na verdade ele deve ser suspenso. O raciocínio é claro, mas a conclusão está errada."
-      }
+        "citations": 2.0,
+        "total": 6.0,
+        "normalized": 0.5455,
+        "justification": "A resposta do candidato apresenta uma interpretação incorreta ao afirmar que a aposentadoria extingue o contrato de trabalho, quando na verdade ele deve ser suspenso. O raciocínio é claro, mas a fundamentação legal e a citação do artigo não estão completas."
+      },
+      "question_id": "39_direito_do_trabalho_questao_2_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -1006,11 +1090,13 @@
       "llm_judge": {
         "correctness": 4.0,
         "reasoning": 3.0,
-        "citations": 3.0,
-        "total": 10.0,
-        "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa, abordando a necessidade de uma ação judicial com pedido de tutela de urgência, fundamentada na legislação pertinente. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado na explicação da urgência e suas implicações."
-      }
+        "citations": 4.0,
+        "total": 11.0,
+        "normalized": 1.0,
+        "justification": "A resposta do candidato está correta e completa, abordando a necessidade de uma ação judicial com pedido de tutela de urgência, fundamentada na legislação pertinente e na jurisprudência. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado na explicação da urgência."
+      },
+      "question_id": "39_direito_do_trabalho_questao_2_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -1032,8 +1118,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao indicar a necessidade de um inquérito para apuração de falta grave, mas poderia ser mais clara na estruturação do raciocínio. As citações legais são adequadas, mas o artigo 494 da CLT não é o mais pertinente, sendo mais apropriado referir-se ao artigo 853 da CLT."
-      }
+        "justification": "A resposta do candidato está correta e completa ao indicar a necessidade de um inquérito judicial para apuração de falta grave, mas poderia ter mencionado explicitamente a relação com a estabilidade do dirigente sindical. As citações legais são adequadas, mas o artigo 494 da CLT não é o mais pertinente, sendo o artigo 853 mais apropriado."
+      },
+      "question_id": "39_direito_do_trabalho_questao_3_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -1055,8 +1143,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa, abordando a inexistência de estabilidade e fundamentando com a legislação pertinente, embora a citação do artigo da CLT poderia ser mais precisa ao incluir o inciso correto."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a inexistência de estabilidade devido ao momento da eleição em relação à rescisão contratual. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado. As citações legais são pertinentes, mas a referência ao artigo da CLT poderia ser mais precisa."
+      },
+      "question_id": "39_direito_do_trabalho_questao_3_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -1078,8 +1168,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que a estabilidade sindical não se aplica a membros do conselho fiscal, mas poderia ter aprofundado mais na fundamentação. A citação da Súmula 369, I do TST é pertinente, mas faltou mencionar a OJ 365, que reforça o entendimento sobre a função do conselho fiscal."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a estabilidade não se aplica a membros do conselho fiscal, mas poderia ser mais clara ao mencionar a OJ 365 do TST. O raciocínio é estruturado, mas poderia ser mais aprofundado."
+      },
+      "question_id": "39_direito_do_trabalho_questao_4_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -1101,8 +1193,10 @@
         "citations": 2.0,
         "total": 5.0,
         "normalized": 0.4545,
-        "justification": "A resposta do candidato apresenta um erro grave ao indicar o agravo de instrumento como medida cabível, quando o correto seria o mandado de segurança, conforme a Súmula 414 do TST. O raciocínio é claro, mas a fundamentação jurídica está incorreta e incompleta."
-      }
+        "justification": "A resposta do candidato apresenta um erro grave ao indicar o agravo de instrumento como medida cabível, quando o correto seria o mandado de segurança, conforme a Súmula 414 do TST. O raciocínio é claro, mas a fundamentação jurídica está incorreta."
+      },
+      "question_id": "39_direito_do_trabalho_questao_4_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -1119,13 +1213,15 @@
         "f1": 0.7437
       },
       "llm_judge": {
-        "correctness": 4.0,
-        "reasoning": 3.0,
+        "correctness": 3.0,
+        "reasoning": 2.0,
         "citations": 3.0,
-        "total": 10.0,
-        "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa, pois identifica corretamente o início do prazo para os embargos à execução fiscal e fundamenta sua resposta com base na legislação pertinente. A citação do artigo 16, § 1º da Lei nº 6.830/1980 e do art. 219 do CPC é adequada, embora pudesse ser mais precisa ao mencionar o inciso III do art. 16."
-      }
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta ao afirmar que o prazo para embargos se inicia após a intimação da penhora, mas poderia ser mais clara ao mencionar que a intimação é considerada válida a partir do dia útil seguinte. As citações legais estão corretas, mas faltou mencionar o inciso do artigo 16 da Lei nº 6.830/1980."
+      },
+      "question_id": "39_direito_tributario_questao_1_turn_0",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -1147,8 +1243,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que João não deve responder com seus bens pessoais pelo mero inadimplemento, mas poderia ter aprofundado mais sobre a responsabilidade tributária. As citações legais estão corretas, mas faltaram complementos que poderiam enriquecer a argumentação."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que João não deve responder com seus bens pessoais pelo mero inadimplemento, mas poderia ter aprofundado mais sobre a responsabilidade tributária. As citações legais estão corretas, mas faltaram alguns complementos que poderiam enriquecer a argumentação."
+      },
+      "question_id": "39_direito_tributario_questao_1_turn_1",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -1165,13 +1263,15 @@
         "f1": 0.7145
       },
       "llm_judge": {
-        "correctness": 0.0,
+        "correctness": 1.0,
         "reasoning": 1.0,
         "citations": 2.0,
-        "total": 3.0,
-        "normalized": 0.2727,
-        "justification": "A resposta do candidato está incorreta ao afirmar que o ISS é devido ao Município Alfa, desconsiderando a regra da LC 116/03 que estabelece a competência do município onde o serviço é executado. O raciocínio é básico, mas não apresenta uma estrutura lógica adequada ao tema."
-      }
+        "total": 4.0,
+        "normalized": 0.3636,
+        "justification": "A resposta do candidato apresenta uma interpretação errônea da legislação, pois o ISS é devido ao município onde o serviço é executado, ou seja, ao Município Beta, conforme a LC 116/03. O raciocínio é básico e não considera a possibilidade de retenção do ISS pelo tomador do serviço."
+      },
+      "question_id": "39_direito_tributario_questao_2_turn_0",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -1188,13 +1288,15 @@
         "f1": 0.6729
       },
       "llm_judge": {
-        "correctness": 4.0,
-        "reasoning": 3.0,
+        "correctness": 3.0,
+        "reasoning": 2.0,
         "citations": 3.0,
-        "total": 10.0,
-        "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa, abordando a possibilidade de a lei municipal estabelecer a responsabilidade tributária, mas poderia ter aprofundado mais na fundamentação dos princípios constitucionais. As citações legais são adequadas, mas faltaram detalhes sobre a LC 116/03."
-      }
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a lei municipal pode estabelecer a responsabilidade tributária, mas poderia ter aprofundado mais na fundamentação. As citações legais estão corretas, mas faltaram detalhes sobre a legislação mencionada."
+      },
+      "question_id": "39_direito_tributario_questao_2_turn_1",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -1216,8 +1318,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a inconstitucionalidade da exigência de depósito prévio e a violação do princípio da ampla defesa. As citações legais são pertinentes, embora não tenham sido tão completas quanto a resposta de referência."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a inconstitucionalidade da exigência de depósito prévio e a violação do princípio da ampla defesa. No entanto, poderia ter incluído a Súmula Vinculante nº 21 para uma fundamentação ainda mais robusta."
+      },
+      "question_id": "39_direito_tributario_questao_3_turn_0",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -1239,8 +1343,10 @@
         "citations": 3.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato aborda a suspensão do processo administrativo, mas não menciona a renúncia ao poder de recorrer, que é um ponto crucial da questão. As citações legais são relevantes, mas a fundamentação poderia ser mais completa."
-      }
+        "justification": "A resposta do candidato aborda a suspensão do processo administrativo, mas não menciona a renúncia ao poder de recorrer, que é um ponto crucial da questão. As citações legais são relevantes, mas faltam complementos que poderiam fortalecer a argumentação."
+      },
+      "question_id": "39_direito_tributario_questao_3_turn_1",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -1257,13 +1363,15 @@
         "f1": 0.596
       },
       "llm_judge": {
-        "correctness": 0.0,
+        "correctness": 1.0,
         "reasoning": 1.0,
         "citations": 2.0,
-        "total": 3.0,
-        "normalized": 0.2727,
-        "justification": "A resposta do candidato está incorreta ao afirmar que a notificação é necessária para a constituição do crédito tributário, desconsiderando a Súmula 436 do STJ. O raciocínio é básico, mas não apresenta a fundamentação correta sobre a constituição do crédito tributário."
-      }
+        "total": 4.0,
+        "normalized": 0.3636,
+        "justification": "A resposta do candidato apresenta um erro ao afirmar que a notificação é necessária para a constituição do crédito tributário, contrariando a jurisprudência e a legislação que dispensa essa formalidade após a entrega da declaração. A citação do art. 142 do CTN é relevante, mas não é suficiente para sustentar o argumento apresentado."
+      },
+      "question_id": "39_direito_tributario_questao_4_turn_0",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -1286,7 +1394,9 @@
         "total": 7.0,
         "normalized": 0.6364,
         "justification": "A resposta do candidato está correta e bem fundamentada, mas não menciona explicitamente a Súmula 446 do STJ, que é relevante para a questão. O raciocínio é claro, mas poderia ser mais estruturado."
-      }
+      },
+      "question_id": "39_direito_tributario_questao_4_turn_1",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -1308,8 +1418,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que a responsabilidade é objetiva, mas poderia ser mais clara ao mencionar especificamente o artigo 2º da Lei nº 12.846/2013. As citações legais estão corretas, mas faltou a referência ao artigo 2º, que é fundamental para a argumentação."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a responsabilidade é objetiva, mas poderia ser mais clara ao mencionar especificamente o artigo 2º da Lei nº 12.846/2013. As citações estão corretas, mas faltou a referência ao artigo 2º, que é fundamental para a argumentação."
+      },
+      "question_id": "40_direito_administrativo_questao_1_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -1331,8 +1443,10 @@
         "citations": 2.0,
         "total": 5.0,
         "normalized": 0.4545,
-        "justification": "A resposta do candidato apresenta uma interpretação errônea da Lei nº 12.846/2013, pois ignora o requisito de ser a primeira a se manifestar para a formalização do acordo de leniência, conforme o Art. 16, § 1º, inciso I. O raciocínio é claro, mas a fundamentação legal é insuficiente e imprecisa."
-      }
+        "justification": "A resposta do candidato apresenta uma interpretação errônea da Lei nº 12.846/2013, pois ignora o requisito de ser a primeira a se manifestar, embora mencione a relevância da colaboração. A citação legal é imprecisa, pois não menciona o artigo específico que trata do acordo de leniência."
+      },
+      "question_id": "40_direito_administrativo_questao_1_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -1354,8 +1468,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a ilegalidade da cobrança e a falta de necessidade de motivação para o acesso a informações não sigilosas, embora pudesse ser mais estruturada em sua argumentação."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a ilegalidade da cobrança e a falta de necessidade de motivação para o acesso à informação. No entanto, poderia ter explorado mais detalhadamente as implicações do indeferimento do pedido."
+      },
+      "question_id": "40_direito_administrativo_questao_2_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -1377,8 +1493,10 @@
         "citations": 4.0,
         "total": 11.0,
         "normalized": 1.0,
-        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando a ilegalidade da exigência de justificativa e a cobrança de taxa, com base nos artigos pertinentes da Lei de Acesso à Informação."
-      }
+        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando os principais aspectos legais da Lei de Acesso à Informação. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado em algumas partes."
+      },
+      "question_id": "40_direito_administrativo_questao_2_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -1400,8 +1518,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa, abordando os requisitos legais para a utilização do sistema de registro de preços, mas poderia ser mais detalhada em relação à fundamentação legal específica. As citações são adequadas, mas faltam referências diretas aos artigos mencionados na resposta de referência."
-      }
+        "justification": "A resposta do candidato está correta e completa, abordando os requisitos legais para a utilização do registro de preços, mas poderia ser mais clara na estruturação do raciocínio. As citações legais são adequadas, mas faltam detalhes sobre os artigos mencionados."
+      },
+      "question_id": "40_direito_administrativo_questao_3_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -1420,11 +1540,13 @@
       "llm_judge": {
         "correctness": 0.0,
         "reasoning": 1.0,
-        "citations": 1.0,
-        "total": 2.0,
-        "normalized": 0.1818,
-        "justification": "A resposta do candidato está incorreta, pois a adesão da autarquia federal à ata de registro de preços gerenciada por órgão estadual é vedada pela Lei nº 14.133/2021, conforme o Art. 86, § 8º. O raciocínio é básico, mas não apresenta a fundamentação correta e as citações legais são inadequadas."
-      }
+        "citations": 2.0,
+        "total": 3.0,
+        "normalized": 0.2727,
+        "justification": "A resposta do candidato está incorreta, pois a adesão da autarquia federal à ata de registro de preços gerenciada por órgão estadual é vedada pela Lei nº 14.133/2021, conforme o Art. 86, § 8º. O raciocínio é básico, mas não apresenta a fundamentação correta para a situação apresentada."
+      },
+      "question_id": "40_direito_administrativo_questao_3_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -1446,8 +1568,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa, abordando a questão da estabilidade sob o regime celetista e mencionando a jurisprudência do STF. A citação do artigo 41 da CF/1988 está correta, mas poderia ter incluído mais detalhes sobre o regime jurídico aplicável."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a estabilidade não se aplica ao regime celetista, além de apresentar um raciocínio claro e estruturado. A citação do artigo 41 da CF/1988 está correta, mas poderia ser complementada com a menção ao §1º do Art. 173 para maior precisão."
+      },
+      "question_id": "40_direito_administrativo_questao_4_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -1466,11 +1590,13 @@
       "llm_judge": {
         "correctness": 3.0,
         "reasoning": 2.0,
-        "citations": 2.0,
-        "total": 7.0,
-        "normalized": 0.6364,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que o teto constitucional não se aplica, mas poderia ter mencionado explicitamente o artigo 37, §9º da CF/88. O raciocínio é claro, mas poderia ser mais estruturado."
-      }
+        "citations": 3.0,
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta e completa ao afirmar que o teto constitucional não se aplica, mas poderia ter aprofundado mais na fundamentação sobre a natureza da sociedade de economia mista. A citação do artigo 37, XI, é correta, mas faltou mencionar o §9º, que é crucial para a argumentação."
+      },
+      "question_id": "40_direito_administrativo_questao_4_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -1492,8 +1618,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta ao afirmar que o condomínio é responsável de forma objetiva, mas a fundamentação poderia ser mais clara ao relacionar diretamente com o Art. 938 do CC, que é o artigo mais pertinente ao caso. A citação do Art. 927, parágrafo único, é relevante, mas não é o mais adequado para a situação apresentada."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, mas a citação do artigo 927, parágrafo único, do Código Civil não é a mais adequada para o caso, que se relaciona mais diretamente ao artigo 938. O raciocínio é claro, mas poderia ser mais estruturado."
+      },
+      "question_id": "40_direito_civil_questao_1_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -1515,8 +1643,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que o juízo deve proferir sentença homologatória da conciliação, mas poderia ser mais clara ao explicar a natureza da sentença. As citações legais estão corretas, mas faltaram complementos que poderiam enriquecer a fundamentação."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que o juízo deve proferir sentença homologatória da conciliação, mas poderia ser mais clara ao explicar a natureza da sentença. As citações legais estão corretas, mas faltaram complementos que poderiam enriquecer a resposta."
+      },
+      "question_id": "40_direito_civil_questao_1_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -1538,8 +1668,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta ao mencionar a possibilidade de revogação da doação por ingratidão, mas não aborda a questão do descumprimento do encargo, que é uma alternativa válida. A citação do artigo 557 é pertinente, mas poderia incluir mais detalhes sobre os artigos 562 e 555 do Código Civil."
-      }
+        "justification": "A resposta do candidato está correta ao mencionar a possibilidade de revogação da doação por ingratidão, mas não aborda a revogação por descumprimento de encargos, o que a torna incompleta. As citações legais são adequadas, mas poderiam ser mais precisas em relação ao contexto da doação e usufruto."
+      },
+      "question_id": "40_direito_civil_questao_2_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -1561,8 +1693,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao indicar a ação de revogação da doação, mas poderia ser mais clara na explicação da legitimidade de Tereza. As citações legais são adequadas, mas faltam complementos que poderiam enriquecer a fundamentação."
-      }
+        "justification": "A resposta do candidato está correta e completa ao indicar a ação de revogação da doação, mas poderia ser mais clara sobre a exclusividade da legitimidade de Maria. As citações legais são adequadas, mas faltam complementos que poderiam enriquecer a fundamentação."
+      },
+      "question_id": "40_direito_civil_questao_2_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -1584,8 +1718,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta ao indicar a ação de interdição e a necessidade de curatela provisória, mas poderia ser mais clara sobre a urgência e a fundamentação legal específica para a curatela. As citações legais são adequadas, mas faltam alguns detalhes que poderiam enriquecer a argumentação."
-      }
+        "justification": "A resposta do candidato está correta e completa ao indicar a ação de interdição e a necessidade de curatela provisória, mas poderia ser mais clara na estruturação do pedido. As citações legais são adequadas, mas faltam alguns detalhes que poderiam enriquecer a fundamentação."
+      },
+      "question_id": "40_direito_civil_questao_3_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -1608,7 +1744,9 @@
         "total": 8.0,
         "normalized": 0.7273,
         "justification": "A resposta do candidato está correta ao afirmar que é possível a curatela compartilhada, mas poderia ser mais completa ao mencionar especificamente o Art. 1.775-A do CC. O raciocínio é claro, mas não segue uma estrutura formal como IRAC."
-      }
+      },
+      "question_id": "40_direito_civil_questao_3_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -1627,11 +1765,13 @@
       "llm_judge": {
         "correctness": 4.0,
         "reasoning": 3.0,
-        "citations": 4.0,
-        "total": 11.0,
-        "normalized": 1.0,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a relação de causalidade entre o inadimplemento de Beatriz e o atraso na obra, além de mencionar o princípio da exceptio non adimpleti contractus. As citações legais estão corretas e completas, incluindo o artigo 395 e o artigo 476 do Código Civil."
-      }
+        "citations": 3.0,
+        "total": 10.0,
+        "normalized": 0.9091,
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a relação de causalidade e citando os artigos pertinentes do Código Civil. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado na explicação do princípio da exceptio non adimpleti contractus."
+      },
+      "question_id": "40_direito_civil_questao_4_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -1653,8 +1793,10 @@
         "citations": 4.0,
         "total": 11.0,
         "normalized": 1.0,
-        "justification": "A resposta do candidato está correta e completa, identificando adequadamente os embargos à execução como o instrumento processual apropriado e o prazo legal para sua apresentação. O raciocínio é claro e bem estruturado, embora pudesse ser um pouco mais detalhado na explicação da exceção de contrato não cumprido."
-      }
+        "justification": "A resposta do candidato está correta e completa, identificando o instrumento processual adequado e o prazo legal, além de justificar a escolha dos embargos à execução de forma clara e coerente."
+      },
+      "question_id": "40_direito_civil_questao_4_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -1676,8 +1818,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato identifica corretamente o ilícito e menciona a violação da autonomia dos Poderes, mas não especifica o crime de responsabilidade de forma tão direta quanto a resposta de referência. As citações legais são adequadas, mas poderiam ser mais completas."
-      }
+        "justification": "A resposta do candidato identifica corretamente a violação da autonomia dos Poderes e menciona possíveis responsabilizações, mas não especifica claramente o crime de responsabilidade conforme a referência. As citações legais são adequadas, mas poderiam ser mais completas."
+      },
+      "question_id": "40_direito_constitucional_questao_1_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -1699,8 +1843,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa ao identificar o mandado de segurança como a ação adequada, fundamentando-se no direito líquido e certo da Câmara Municipal. O raciocínio é bem estruturado, embora pudesse ser ainda mais detalhado, e as citações legais são precisas, mas faltou mencionar a Lei nº 12.016/2009 para uma citação perfeita."
-      }
+        "justification": "A resposta do candidato está correta e completa ao identificar o mandado de segurança como a ação adequada, fundamentando-se no direito líquido e certo da Câmara Municipal. O raciocínio é bem estruturado, mas poderia ser mais detalhado em relação à fundamentação do direito à autonomia financeira."
+      },
+      "question_id": "40_direito_constitucional_questao_1_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -1723,7 +1869,9 @@
         "total": 11.0,
         "normalized": 1.0,
         "justification": "A resposta do candidato está correta e bem fundamentada, abordando a competência da União para emitir moeda e as implicações legais da criação de uma moeda regional. As citações legais estão corretas e completas, reforçando a argumentação apresentada."
-      }
+      },
+      "question_id": "40_direito_constitucional_questao_2_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -1745,8 +1893,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a inconstitucionalidade da criação da unidade de valor pelos Estados, embora poderia ter mencionado explicitamente o artigo 22, inciso VI da CF/88 para maior precisão nas citações."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a competência exclusiva da União para legislar sobre moeda e o curso forçado, embora poderia ter uma estrutura ainda mais clara. As citações legais são adequadas, mas faltam complementos que poderiam enriquecer a argumentação."
+      },
+      "question_id": "40_direito_constitucional_questao_2_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -1768,8 +1918,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato é correta, completa e bem fundamentada, abordando a inconstitucionalidade da lei municipal em relação à autonomia pedagógica e à liberdade de ensino. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado na explicação dos princípios constitucionais envolvidos."
-      }
+        "justification": "A resposta do candidato é correta e bem fundamentada, abordando a inconstitucionalidade da lei municipal em relação à autonomia pedagógica e à liberdade de ensino. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado em alguns aspectos."
+      },
+      "question_id": "40_direito_constitucional_questao_3_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -1792,7 +1944,9 @@
         "total": 11.0,
         "normalized": 1.0,
         "justification": "A resposta do candidato está correta e completa ao identificar a Ação Direta de Inconstitucionalidade (ADI) como a via adequada, apresentando fundamentos jurídicos sólidos e pertinentes. As citações legais estão corretas e bem referenciadas, demonstrando um bom entendimento da matéria."
-      }
+      },
+      "question_id": "40_direito_constitucional_questao_3_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -1814,8 +1968,10 @@
         "citations": 3.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta uma argumentação válida sobre a diferenciação dos benefícios, mas não aborda de forma clara a inconstitucionalidade da diferenciação em relação ao princípio da universalidade da assistência social. As citações legais são relevantes, mas poderiam ser mais completas."
-      }
+        "justification": "A resposta do candidato apresenta uma argumentação válida sobre a diferenciação dos benefícios, mas não aborda de forma clara a inconstitucionalidade da diferenciação em relação ao princípio da universalidade, conforme a resposta de referência. As citações legais são relevantes, mas poderiam ser mais completas."
+      },
+      "question_id": "40_direito_constitucional_questao_4_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -1837,8 +1993,10 @@
         "citations": 4.0,
         "total": 11.0,
         "normalized": 1.0,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a inconstitucionalidade da contribuição e a violação dos princípios da assistência social e da igualdade, além de apresentar um raciocínio claro e estruturado."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a inconstitucionalidade da contribuição e a violação dos princípios da assistência social e da isonomia, além de apresentar um raciocínio claro e estruturado. As citações legais estão corretas e completas, referindo-se aos artigos pertinentes da Constituição Federal."
+      },
+      "question_id": "40_direito_constitucional_questao_4_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -1860,8 +2018,10 @@
         "citations": 2.0,
         "total": 5.0,
         "normalized": 0.4545,
-        "justification": "A resposta do candidato apresenta uma análise que, embora incorreta ao afirmar que não há novidade, demonstra algum entendimento sobre os requisitos legais. No entanto, a fundamentação é insuficiente e não aborda adequadamente a distinção entre os serviços e a ausência de confusão, conforme a resposta de referência."
-      }
+        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a novidade do sinal distintivo, pois não considera a ausência de confusão entre os estabelecimentos. A citação do art. 125 é inadequada, pois o correto seria referir-se ao art. 124, inciso V, da Lei nº 9.279/1996."
+      },
+      "question_id": "40_direito_empresarial_questao_1_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -1883,8 +2043,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e completa, abordando a autonomia do registro de marca em relação à duração da sociedade e mencionando a necessidade de uso efetivo para a prorrogação. A citação da Lei nº 9.279/1996 é adequada, mas poderia ser mais precisa ao incluir o artigo específico mencionado na resposta de referência."
-      }
+        "justification": "A resposta do candidato está correta e completa, explicando que a validade do registro de marca não depende da duração da sociedade, além de mencionar a autonomia do direito sobre a marca. A citação da Lei nº 9.279/1996 é adequada, mas poderia ser mais precisa ao incluir o artigo exato e o caput."
+      },
+      "question_id": "40_direito_empresarial_questao_1_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -1906,8 +2068,10 @@
         "citations": 0.0,
         "total": 4.0,
         "normalized": 0.3636,
-        "justification": "A resposta do candidato apresenta uma análise correta, mas é incompleta ao não abordar diretamente o artigo 50 do Código Civil, que é fundamental para a questão da confusão patrimonial."
-      }
+        "justification": "A resposta do candidato apresenta uma análise correta, mas é incompleta ao não abordar diretamente a separação patrimonial prevista no Código Civil. Além disso, não há citações legais que sustentem a argumentação apresentada."
+      },
+      "question_id": "40_direito_empresarial_questao_2_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -1929,8 +2093,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, explicando que a mera ampliação do objeto social não caracteriza desvio de finalidade sem a intenção de fraudar credores. A citação do STJ é pertinente, mas poderia incluir o artigo do Código Civil mencionado na resposta de referência para ser perfeita."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a necessidade de prova de intenção fraudulenta para caracterizar desvio de finalidade. A citação do STJ é pertinente, embora não tenha mencionado o artigo específico do Código Civil."
+      },
+      "question_id": "40_direito_empresarial_questao_2_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -1952,8 +2118,10 @@
         "citations": 2.0,
         "total": 5.0,
         "normalized": 0.4545,
-        "justification": "A resposta do candidato apresenta uma classificação incorreta do crédito como quirografário, quando deveria ser classificado como extraconcursal. O raciocínio é claro, mas a fundamentação legal é inadequada e incompleta."
-      }
+        "justification": "A resposta do candidato apresenta uma classificação incorreta do crédito como quirografário, quando deveria ser classificado como extraconcursal, conforme a referência. O raciocínio é claro, mas a fundamentação legal não está correta."
+      },
+      "question_id": "40_direito_empresarial_questao_3_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -1975,8 +2143,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato está correta ao afirmar que o administrador deve comunicar a vendedora e justificar sua decisão, mas não menciona a devolução dos valores pagos, que é essencial. As citações legais são relevantes, mas não incluem o artigo específico que trata da restituição do bem."
-      }
+        "justification": "A resposta do candidato está correta ao afirmar que o administrador deve comunicar a vendedora e justificar sua decisão, mas não menciona explicitamente a devolução dos valores pagos, que é um ponto crucial. As citações legais são relevantes, mas não incluem o artigo específico que fundamenta a restituição do bem."
+      },
+      "question_id": "40_direito_empresarial_questao_3_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -1998,8 +2168,10 @@
         "citations": 2.0,
         "total": 3.0,
         "normalized": 0.2727,
-        "justification": "A resposta do candidato está incorreta, pois o artigo 1.182 do Código Civil estabelece que a escrituração do livro Diário deve ser feita por um contabilista habilitado, salvo exceções. O raciocínio é básico, mas não fundamenta corretamente a posição legal."
-      }
+        "justification": "A resposta do candidato está incorreta, pois o artigo 1.182 do Código Civil estabelece que a escrituração do livro Diário deve ser feita por um contabilista habilitado, salvo exceções. O raciocínio é básico, mas não fundamenta adequadamente a posição do candidato."
+      },
+      "question_id": "40_direito_empresarial_questao_4_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -2022,7 +2194,9 @@
         "total": 8.0,
         "normalized": 0.7273,
         "justification": "A resposta do candidato está correta e completa, mas poderia ser mais precisa ao mencionar o artigo exato que trata da autenticação do livro Diário. O raciocínio é claro, mas não segue uma estrutura formal como IRAC."
-      }
+      },
+      "question_id": "40_direito_empresarial_questao_4_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -2044,8 +2218,10 @@
         "citations": 2.0,
         "total": 5.0,
         "normalized": 0.4545,
-        "justification": "A resposta do candidato apresenta a Revisão Criminal como medida processual, que não é cabível para impugnar o recebimento da denúncia, sendo mais apropriado o habeas corpus. Embora o raciocínio seja estruturado, a fundamentação legal está incorreta e incompleta."
-      }
+        "justification": "A resposta do candidato apresenta a Revisão Criminal como medida processual, que não é cabível para impugnar o recebimento da denúncia, sendo mais apropriado o habeas corpus. O raciocínio é claro, mas a fundamentação legal está incorreta e incompleta."
+      },
+      "question_id": "40_direito_penal_questao_1_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -2067,8 +2243,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta um argumento relevante sobre a ausência de dolo específico, mas não menciona a Súmula Vinculante nº 24, que é crucial para a defesa. A citação do Art. 129 da Lei nº 8.137/1990 é pertinente, mas a argumentação poderia ser mais estruturada."
-      }
+        "justification": "A resposta do candidato apresenta um argumento válido sobre a ausência de dolo, mas não menciona a Súmula Vinculante nº 24, que é crucial para a defesa. A citação do Art. 129 da Lei nº 8.137/1990 é pertinente, mas a argumentação poderia ser mais estruturada."
+      },
+      "question_id": "40_direito_penal_questao_1_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -2085,13 +2263,15 @@
         "f1": 0.6502
       },
       "llm_judge": {
-        "correctness": 0.0,
+        "correctness": 1.0,
         "reasoning": 2.0,
         "citations": 3.0,
-        "total": 5.0,
-        "normalized": 0.4545,
-        "justification": "A resposta do candidato está incorreta ao afirmar que a fiança não é cabível, pois o Art. 24-A, § 2º, da Lei nº 11.340/2006 prevê que a autoridade judicial é quem deve arbitrar a fiança, o que não foi considerado. O raciocínio é claro, mas a conclusão é errada, e as citações legais são relevantes, mas não totalmente precisas."
-      }
+        "total": 6.0,
+        "normalized": 0.5455,
+        "justification": "A resposta do candidato apresenta uma interpretação incorreta sobre a fiança no crime de descumprimento de medida protetiva, pois a fiança é cabível, mas a fundamentação sobre a liberdade provisória é válida. O raciocínio é claro, mas não aborda diretamente a questão do arbitramento de fiança como solicitado."
+      },
+      "question_id": "40_direito_penal_questao_2_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -2113,8 +2293,10 @@
         "citations": 3.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta uma análise correta sobre a possibilidade de retratação, mas não considera que a ação penal é pública incondicionada em casos de violência doméstica, o que a torna incompleta. As citações legais são relevantes, mas faltam complementos que poderiam enriquecer a argumentação."
-      }
+        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a possibilidade de retratação, pois a ação penal é pública incondicionada em casos de violência doméstica, mas é bem estruturada e menciona a legislação pertinente."
+      },
+      "question_id": "40_direito_penal_questao_2_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -2136,8 +2318,10 @@
         "citations": 3.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta uma argumentação válida, mas não aborda a possibilidade do Acordo de Não Persecução Penal, que é a estratégia processual mais adequada para evitar o recebimento da denúncia. As citações legais são corretas, mas a fundamentação poderia ser mais completa."
-      }
+        "justification": "A resposta do candidato apresenta uma fundamentação correta ao pleitear a absolvição sumária, mas não aborda a possibilidade do Acordo de Não Persecução Penal, que é a estratégia mais adequada para evitar o recebimento da denúncia. As citações legais são relevantes, mas faltam complementos que poderiam fortalecer a argumentação."
+      },
+      "question_id": "40_direito_penal_questao_3_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -2159,8 +2343,10 @@
         "citations": 3.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta a fração de progressão correta, mas confunde a natureza do delito ao afirmar que o tráfico privilegiado é hediondo, o que não é verdade. A citação do artigo é adequada, mas falta a menção ao § 5º da LEP que esclarece a natureza do delito."
-      }
+        "justification": "A resposta do candidato apresenta uma fração de progressão de regime incorreta, pois o correto é 16% da pena, não 1/6. No entanto, a argumentação sobre a natureza do delito e a aplicação do tráfico privilegiado está clara e estruturada."
+      },
+      "question_id": "40_direito_penal_questao_3_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -2182,8 +2368,10 @@
         "citations": 2.0,
         "total": 6.0,
         "normalized": 0.5455,
-        "justification": "A resposta do candidato apresenta uma tipificação penal que não se alinha completamente com a análise da referência, pois ignora a possibilidade de homicídio culposo e a tipificação correta do uso de explosivos. O raciocínio é claro, mas não aborda todos os aspectos relevantes do caso."
-      }
+        "justification": "A resposta do candidato apresenta uma tipificação penal que não se alinha completamente com a análise da referência, pois ignora a possibilidade de homicídio culposo e a causa de aumento de pena. O raciocínio é claro, mas a fundamentação jurídica é superficial e não aborda todos os aspectos relevantes do caso."
+      },
+      "question_id": "40_direito_penal_questao_4_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -2205,8 +2393,10 @@
         "citations": 3.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta um pedido de impronúncia que, embora fundamentado, não é o mais adequado para a situação, já que a desclassificação seria mais apropriada. A citação do Art. 414 é correta, mas a argumentação sobre o erro de tipo essencial não é suficientemente clara e completa."
-      }
+        "justification": "A resposta do candidato apresenta um pedido de impronúncia que, embora fundamentado, não é o mais adequado para a situação, já que a desclassificação é mais pertinente. A citação do Art. 414 é correta, mas a argumentação sobre o erro de tipo essencial e a alternativa de desclassificação para lesão corporal não são suficientemente claras."
+      },
+      "question_id": "40_direito_penal_questao_4_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -2228,8 +2418,10 @@
         "citations": 4.0,
         "total": 11.0,
         "normalized": 1.0,
-        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando a possibilidade do IDPJ na fase de conhecimento e citando a legislação pertinente de forma precisa. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado em alguns aspectos."
-      }
+        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando a possibilidade do IDPJ na fase de conhecimento e citando o artigo correto da CLT, além de mencionar a jurisprudência pertinente."
+      },
+      "question_id": "40_direito_do_trabalho_questao_1_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -2247,12 +2439,14 @@
       },
       "llm_judge": {
         "correctness": 3.0,
-        "reasoning": 2.0,
+        "reasoning": 3.0,
         "citations": 3.0,
-        "total": 8.0,
-        "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que não cabe recurso imediato, mas poderia ser mais clara ao mencionar especificamente o artigo 855-A, § 1º, inciso I, da CLT. O raciocínio é bom, mas poderia ser mais estruturado."
-      }
+        "total": 9.0,
+        "normalized": 0.8182,
+        "justification": "A resposta do candidato está correta e completa, abordando os requisitos para a interposição de recurso imediato e a possibilidade de reabertura do IDPJ na fase de execução, embora não tenha citado o artigo 855-A, § 1º, inciso I, da CLT de forma completa."
+      },
+      "question_id": "40_direito_do_trabalho_questao_1_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -2274,8 +2468,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato está correta ao afirmar que Filomena terá direito a 30 dias de férias, mas a justificativa sobre as faltas não está totalmente precisa, pois não considera que as ausências foram, em sua maioria, justificadas. A citação da CLT poderia ser mais específica."
-      }
+        "justification": "A resposta do candidato está correta ao afirmar que Filomena terá direito a 30 dias de férias, mas a justificativa sobre as faltas não está completamente precisa, pois não considera que as faltas por morte de tio são justificadas. A citação da CLT é vaga e não menciona os artigos específicos."
+      },
+      "question_id": "40_direito_do_trabalho_questao_2_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -2292,13 +2488,15 @@
         "f1": 0.6554
       },
       "llm_judge": {
-        "correctness": 1.0,
+        "correctness": 3.0,
         "reasoning": 2.0,
         "citations": 3.0,
-        "total": 6.0,
-        "normalized": 0.5455,
-        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre o prazo para requerer o abono pecuniário, que deve ser feito até 15 dias antes do término do período aquisitivo, e não do início das férias, conforme o Art. 143, § 1º, da CLT."
-      }
+        "total": 8.0,
+        "normalized": 0.7273,
+        "justification": "A resposta do candidato está correta ao afirmar que o abono pecuniário deve ser solicitado com antecedência mínima de 15 dias, mas não menciona que o prazo se refere ao término do período aquisitivo, o que poderia enriquecer a argumentação. A citação do artigo 143 da CLT é adequada, mas falta o parágrafo que especifica o prazo correto."
+      },
+      "question_id": "40_direito_do_trabalho_questao_2_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -2320,8 +2518,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta uma tese jurídica correta sobre a não configuração do sobreaviso, mas não menciona a Súmula 428 do TST, que é essencial. O raciocínio é claro, mas poderia ser mais estruturado e aprofundado."
-      }
+        "justification": "A resposta do candidato apresenta uma tese jurídica correta sobre a não caracterização do sobreaviso, mas não menciona a Súmula 428 do TST, que é essencial. O raciocínio é claro, mas poderia ser mais estruturado e aprofundado."
+      },
+      "question_id": "40_direito_do_trabalho_questao_3_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -2343,8 +2543,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta a tese correta sobre a tempestividade do recurso, mas confunde a súmula citada, que deveria ser a 385, I, do TST, e não a 388, I. O raciocínio é claro, mas poderia ser mais estruturado."
-      }
+        "justification": "A resposta do candidato apresenta a tese correta sobre a tempestividade do recurso, mas menciona a Súmula 388, que não é a mais adequada para o caso. O raciocínio é claro, mas poderia ser mais estruturado."
+      },
+      "question_id": "40_direito_do_trabalho_questao_3_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -2367,7 +2569,9 @@
         "total": 8.0,
         "normalized": 0.7273,
         "justification": "A resposta do candidato está correta e completa ao indicar a ação de cumprimento, mas poderia ser mais precisa ao mencionar o artigo correto da CLT. O raciocínio é claro, mas não segue uma estrutura formal como IRAC."
-      }
+      },
+      "question_id": "40_direito_do_trabalho_questao_4_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -2389,8 +2593,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao abordar a imprescritibilidade dos direitos coletivos, mas não menciona explicitamente a Súmula 350 do TST, que é crucial para a argumentação sobre o início do prazo prescricional."
-      }
+        "justification": "A resposta do candidato está correta ao afirmar que os direitos coletivos são imprescritíveis, mas não menciona a Súmula 350 do TST, que é crucial para a argumentação sobre o início do prazo prescricional."
+      },
+      "question_id": "40_direito_do_trabalho_questao_4_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -2412,8 +2618,10 @@
         "citations": 2.0,
         "total": 4.0,
         "normalized": 0.3636,
-        "justification": "A resposta do candidato apresenta uma argumentação que, embora reconheça a possibilidade de empréstimo compulsório, erra ao afirmar que a ausência de prazo na lei é inconstitucional, desconsiderando a exceção ao princípio da anterioridade. As citações legais são imprecisas e não abordam corretamente os dispositivos aplicáveis."
-      }
+        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a possibilidade de cobrança imediata do empréstimo compulsório, desconsiderando a exceção prevista na Constituição. Além disso, a citação do artigo 148, § 1º, é inadequada, pois não aborda corretamente a questão da anterioridade tributária para empréstimos compulsórios em situações de calamidade pública."
+      },
+      "question_id": "40_direito_tributario_questao_1_turn_0",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -2435,8 +2643,10 @@
         "citations": 1.0,
         "total": 4.0,
         "normalized": 0.3636,
-        "justification": "A resposta do candidato apresenta uma interpretação errônea da Lei de Execuções Fiscais, pois a indicação de bens de terceiros é permitida com consentimento, mas não fundamenta adequadamente sua posição nem cita os artigos corretos da lei."
-      }
+        "justification": "A resposta do candidato apresenta uma interpretação errônea da legislação, pois a Lei de Execuções Fiscais permite a indicação de bens de terceiros com consentimento, mas não menciona isso. O raciocínio é claro, mas não aborda adequadamente a possibilidade legal da penhora do imóvel de André."
+      },
+      "question_id": "40_direito_tributario_questao_2_turn_0",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -2458,8 +2668,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a ordem de preferência na penhora de bens conforme a Lei de Execuções Fiscais. A citação do artigo 11 é adequada, mas poderia ser mais completa ao mencionar o inciso específico que trata das pedras preciosas."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a ordem de preferência na penhora de bens. A citação do artigo 11 da Lei de Execuções Fiscais é adequada, embora não mencione o inciso específico que trata das pedras preciosas."
+      },
+      "question_id": "40_direito_tributario_questao_2_turn_1",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -2481,8 +2693,10 @@
         "citations": 1.0,
         "total": 2.0,
         "normalized": 0.1818,
-        "justification": "A resposta do candidato está incorreta ao afirmar que o IPVA é devido, desconsiderando a imunidade tributária prevista no art. 150, VI, 'b', da Constituição Federal, que se aplica a bens de entidades religiosas utilizados em suas finalidades essenciais. Além disso, a citação do artigo está errada, pois menciona o inciso 'c' em vez do 'b'."
-      }
+        "justification": "A resposta do candidato está incorreta ao afirmar que o IPVA é devido, desconsiderando a imunidade tributária prevista no art. 150, VI, 'b', da Constituição Federal, que se aplica a bens de entidades religiosas utilizados em suas atividades essenciais."
+      },
+      "question_id": "40_direito_tributario_questao_3_turn_0",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -2505,7 +2719,9 @@
         "total": 0.0,
         "normalized": 0.0,
         "justification": "Empty prediction or reference"
-      }
+      },
+      "question_id": "40_direito_tributario_questao_3_turn_1",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -2528,7 +2744,9 @@
         "total": 0.0,
         "normalized": 0.0,
         "justification": "Empty prediction or reference"
-      }
+      },
+      "question_id": "40_direito_tributario_questao_4_turn_1",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -2545,13 +2763,15 @@
         "f1": 0.5263
       },
       "llm_judge": {
-        "correctness": 0.0,
-        "reasoning": 1.0,
+        "correctness": 1.0,
+        "reasoning": 2.0,
         "citations": 0.0,
-        "total": 1.0,
-        "normalized": 0.0909,
-        "justification": "A resposta do candidato está incorreta ao afirmar que o ato de aposentadoria estava perfeito, desconsiderando o controle prévio do TCU, conforme o Art. 71, III, da CRFB/88. Além disso, não apresentou citações legais relevantes para fundamentar sua argumentação."
-      }
+        "total": 3.0,
+        "normalized": 0.2727,
+        "justification": "A resposta do candidato apresenta uma interpretação errônea sobre a perfeição do ato de aposentadoria, desconsiderando o controle prévio do TCU, o que compromete a correção jurídica. Além disso, não foram feitas citações legais relevantes que sustentassem a argumentação apresentada."
+      },
+      "question_id": "41_direito_administrativo_questao_1_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -2573,8 +2793,10 @@
         "citations": 2.0,
         "total": 3.0,
         "normalized": 0.2727,
-        "justification": "A resposta do candidato está incorreta ao afirmar que o TCU deve observar o contraditório e a ampla defesa, desconsiderando a Súmula Vinculante nº 3, que exclui essa exigência na apreciação da legalidade do ato de concessão de aposentadoria. O raciocínio é básico, mas não apresenta a fundamentação correta sobre a questão."
-      }
+        "justification": "A resposta do candidato está incorreta, pois o TCU não precisa observar o contraditório e a ampla defesa na apreciação da legalidade do ato de concessão de aposentadoria, conforme a Súmula Vinculante nº 3. O raciocínio é básico, mas não apresenta a fundamentação correta sobre a questão."
+      },
+      "question_id": "41_direito_administrativo_questao_1_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -2596,8 +2818,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que a contratação foi irregular, mas poderia ter mencionado explicitamente a vedação da inexigibilidade para serviços de publicidade conforme a Lei nº 13.303/2016. O raciocínio é claro, mas não segue uma estrutura formal como IRAC."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a contratação foi irregular, mas poderia ter mencionado explicitamente a vedação da inexigibilidade para serviços de publicidade, conforme a Lei nº 13.303/2016. O raciocínio é claro, mas não segue uma estrutura formal como IRAC."
+      },
+      "question_id": "41_direito_administrativo_questao_2_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -2619,8 +2843,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao abordar a responsabilidade da SEM e dos agentes públicos, mas poderia ser mais clara na distinção entre as responsabilidades objetiva e subjetiva. As citações legais são adequadas, mas faltam detalhes sobre os artigos mencionados."
-      }
+        "justification": "A resposta do candidato está correta e completa ao abordar a responsabilidade da SEM e dos agentes públicos, mas poderia ser mais clara na distinção entre as responsabilidades objetiva e subjetiva. As citações legais são relevantes, mas faltam alguns detalhes específicos da legislação mencionada."
+      },
+      "question_id": "41_direito_administrativo_questao_2_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -2642,8 +2868,10 @@
         "citations": 2.0,
         "total": 6.0,
         "normalized": 0.5455,
-        "justification": "A resposta do candidato menciona a proposta inicial, que é um conceito relacionado, mas não é o instrumento correto, que é o Procedimento de Manifestação de Interesse Social. O raciocínio é claro, mas a fundamentação legal não está totalmente correta."
-      }
+        "justification": "A resposta do candidato menciona a proposta inicial, que é um mecanismo previsto na lei, mas não identifica corretamente o Procedimento de Manifestação de Interesse Social, que é o instrumento específico para a situação apresentada. O raciocínio é claro, mas a fundamentação legal é insuficiente."
+      },
+      "question_id": "41_direito_administrativo_questao_3_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -2665,8 +2893,10 @@
         "citations": 0.0,
         "total": 4.0,
         "normalized": 0.3636,
-        "justification": "A resposta do candidato apresenta uma análise válida sobre a participação da OSC, mas não menciona o artigo específico da Lei nº 13.019/2014 que fundamenta a possibilidade de participação, resultando em uma resposta correta, mas incompleta."
-      }
+        "justification": "A resposta do candidato apresenta uma análise correta, mas não menciona o artigo específico da Lei nº 13.019/2014 que fundamenta a possibilidade de participação da OSC no chamamento público, resultando em uma resposta incompleta e sem citações legais adequadas."
+      },
+      "question_id": "41_direito_administrativo_questao_3_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -2688,8 +2918,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que a oferta prévia é necessária, mas poderia ter mencionado o Art. 10-A do Decreto-Lei nº 3.365/1941, que é mais específico sobre a notificação. O raciocínio é claro, mas poderia ser mais estruturado."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a oferta prévia é necessária, mas poderia ser mais clara ao mencionar o Art. 10-A do Decreto-Lei nº 3.365/1941, que é o dispositivo específico que trata da notificação e oferta de indenização. O raciocínio é claro, mas não segue uma estrutura formal como IRAC."
+      },
+      "question_id": "41_direito_administrativo_questao_4_turn_0",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -2711,8 +2943,10 @@
         "citations": 0.0,
         "total": 1.0,
         "normalized": 0.0909,
-        "justification": "A resposta do candidato está incorreta ao afirmar que a arbitragem não é possível, desconsiderando o Art. 10-B do Decreto-Lei nº 3.365/1941, que permite essa opção. Além disso, não apresenta citações legais relevantes para embasar sua argumentação."
-      }
+        "justification": "A resposta do candidato está incorreta ao afirmar que a arbitragem não é possível, desconsiderando o que prevê o Art. 10-B do Decreto-Lei nº 3.365/1941, que permite a arbitragem na desapropriação. Além disso, não há citações legais que sustentem sua argumentação."
+      },
+      "question_id": "41_direito_administrativo_questao_4_turn_1",
+      "category": "Direito Administrativo"
     },
     {
       "citation_f1": {
@@ -2731,11 +2965,13 @@
       "llm_judge": {
         "correctness": 4.0,
         "reasoning": 3.0,
-        "citations": 4.0,
-        "total": 11.0,
-        "normalized": 1.0,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando o estado de necessidade e a responsabilidade de Joaquim pelos danos, com uma estrutura lógica clara e citações legais precisas."
-      }
+        "citations": 3.0,
+        "total": 10.0,
+        "normalized": 0.9091,
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando o estado de necessidade e a responsabilidade de Joaquim pelos danos. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado. A citação do artigo 188 é correta, mas faltou mencionar que se trata do Código Civil de 2002."
+      },
+      "question_id": "41_direito_civil_questao_1_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -2757,8 +2993,10 @@
         "citations": 2.0,
         "total": 9.0,
         "normalized": 0.8182,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que Maria pode denunciar a lide em face de Joaquim, mas não citou os artigos do CPC e do CC de forma precisa, faltando a referência ao Art. 125, inciso II, do CPC e ao Art. 930 do CC."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que Maria pode denunciar a lide em face de Joaquim, mas não citou os artigos do CPC e do CC que fundamentam sua resposta de forma precisa."
+      },
+      "question_id": "41_direito_civil_questao_1_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -2780,8 +3018,10 @@
         "citations": 0.0,
         "total": 5.0,
         "normalized": 0.4545,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que Inocêncio não é responsável, mas não menciona a base legal específica do Art. 440 do Código Civil, o que a torna incompleta em termos de fundamentação legal."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que Inocêncio não é responsável, mas carece de fundamentação legal específica, como a citação do Art. 440 do Código Civil, que poderia fortalecer a argumentação."
+      },
+      "question_id": "41_direito_civil_questao_2_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -2803,8 +3043,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato é correta e completa, abordando a proibição da utilização da imagem e os direitos da atriz, embora a fundamentação sobre medidas judiciais urgentes poderia ser mais específica."
-      }
+        "justification": "A resposta do candidato aborda corretamente a proibição da utilização da imagem da atriz, fundamentando-se nos direitos de personalidade e mencionando a possibilidade de indenização. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado em relação às medidas judiciais cabíveis."
+      },
+      "question_id": "41_direito_civil_questao_3_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -2826,8 +3068,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta ao identificar a necessidade de uma medida liminar, mas não menciona explicitamente a tutela de urgência, que é o termo técnico mais adequado. As citações legais estão corretas, mas poderiam ser mais precisas em relação ao dispositivo do CPC mencionado na resposta de referência."
-      }
+        "justification": "A resposta do candidato está correta ao identificar a necessidade de uma medida liminar, mas não menciona explicitamente a tutela de urgência, que é o termo técnico mais apropriado. As citações legais estão corretas, mas poderiam ser mais completas."
+      },
+      "question_id": "41_direito_civil_questao_3_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -2849,8 +3093,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato está correta ao afirmar que o regime de separação de bens não impede Maria de ser herdeira, mas a divisão proposta não está de acordo com a legislação, que determina a divisão entre cônjuge e herdeiros conforme a ordem de vocação hereditária. Além disso, faltaram citações diretas aos artigos relevantes do Código Civil."
-      }
+        "justification": "A resposta do candidato está correta ao afirmar que o regime de separação de bens não impede Maria de ser beneficiária, mas a divisão proposta entre os herdeiros não está de acordo com a legislação, que determina a divisão entre cônjuge e herdeiros. A citação legal é insuficiente, pois não menciona os artigos corretos do Código Civil que regulam a matéria."
+      },
+      "question_id": "41_direito_civil_questao_4_turn_0",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -2872,8 +3118,10 @@
         "citations": 0.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato está correta e completa ao indicar a ação de consignação em pagamento como a medida adequada, mas não faz citações legais específicas, o que limita a fundamentação jurídica."
-      }
+        "justification": "A resposta do candidato está correta e completa ao indicar a ação de consignação em pagamento como a medida adequada, mas não faz citações legais específicas, o que poderia fortalecer sua argumentação."
+      },
+      "question_id": "41_direito_civil_questao_4_turn_1",
+      "category": "Direito Civil"
     },
     {
       "citation_f1": {
@@ -2895,8 +3143,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a imunidade material do vereador e a relação com a laicidade do Estado. No entanto, poderia ser mais clara ao mencionar que a imunidade se aplica independentemente do local da manifestação, o que a resposta de referência enfatiza."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a imunidade parlamentar e a relação com a crítica à gestão pública. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado em alguns aspectos da jurisprudência. As citações legais são adequadas, mas faltam complementos que poderiam enriquecer a argumentação."
+      },
+      "question_id": "41_direito_constitucional_questao_1_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -2918,8 +3168,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato é correta e completa ao afirmar que a destinação de recursos públicos a escolas religiosas é permitida, desde que respeitados os princípios da laicidade e igualdade. No entanto, a citação de artigos da Constituição poderia ser mais precisa e completa para atingir a nota máxima."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a destinação de recursos públicos a escolas religiosas é permitida, desde que respeitados os princípios da laicidade e igualdade. No entanto, a citação de artigos da Constituição não foi precisa, faltando a menção a incisos específicos que reforçariam a argumentação."
+      },
+      "question_id": "41_direito_constitucional_questao_1_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -2941,8 +3193,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a usurpação de competência e a violação de princípios constitucionais. As citações legais são adequadas, mas poderiam ser mais completas em relação aos dispositivos mencionados."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a usurpação de competência e a violação de princípios constitucionais. As citações legais são pertinentes, embora não tenham sido completamente detalhadas."
+      },
+      "question_id": "41_direito_constitucional_questao_2_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -2961,11 +3215,13 @@
       "llm_judge": {
         "correctness": 2.0,
         "reasoning": 2.0,
-        "citations": 1.0,
-        "total": 5.0,
-        "normalized": 0.4545,
-        "justification": "A resposta do candidato apresenta uma alternativa correta (Mandado de Segurança), mas não aborda a possibilidade de habeas corpus, que é a ação mais adequada para a situação descrita. A citação legal é insuficiente, pois não menciona o artigo específico do habeas corpus."
-      }
+        "citations": 2.0,
+        "total": 6.0,
+        "normalized": 0.5455,
+        "justification": "A resposta do candidato apresenta uma alternativa correta (Mandado de Segurança), mas não aborda a possibilidade de habeas corpus, que é a ação mais adequada para a situação descrita. O raciocínio é claro, mas poderia ser mais estruturado e focado na questão específica da convocação da CPI."
+      },
+      "question_id": "41_direito_constitucional_questao_2_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -2988,7 +3244,9 @@
         "total": 10.0,
         "normalized": 0.9091,
         "justification": "A resposta do candidato identifica corretamente o direito ao sigilo das fontes jornalísticas e justifica a violação de forma clara. A citação do artigo 5º, inciso XIV, é correta, mas poderia incluir o parágrafo do artigo 220 para maior completude."
-      }
+      },
+      "question_id": "41_direito_constitucional_questao_3_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -3010,8 +3268,10 @@
         "citations": 3.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato menciona o recurso ordinário constitucional, que é correto, mas se refere ao CPC/2015, quando deveria ter mencionado a Lei nº 12.016/2009, que regula o mandado de segurança. O raciocínio é claro, mas a fundamentação poderia ser mais robusta."
-      }
+        "justification": "A resposta do candidato menciona o recurso ordinário constitucional, que é correto, mas se baseia no CPC/2015, enquanto a resposta de referência cita a Constituição e a Lei específica sobre mandado de segurança, que são mais apropriadas. O raciocínio é claro, mas poderia ser mais estruturado em relação ao contexto do mandado de segurança."
+      },
+      "question_id": "41_direito_constitucional_questao_3_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -3033,8 +3293,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a possibilidade de atuação da iniciativa privada na saúde, embora poderia ser mais concisa. As citações legais são relevantes, mas faltaram alguns complementos que poderiam enriquecer a argumentação."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a possibilidade de atuação da iniciativa privada na saúde, conforme a Constituição. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado, e as citações legais são adequadas, mas faltaram alguns complementos."
+      },
+      "question_id": "41_direito_constitucional_questao_4_turn_0",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -3051,13 +3313,15 @@
         "f1": 0.5893
       },
       "llm_judge": {
-        "correctness": 1.0,
+        "correctness": 2.0,
         "reasoning": 2.0,
         "citations": 3.0,
-        "total": 6.0,
-        "normalized": 0.5455,
-        "justification": "A resposta do candidato apresenta uma interpretação que permite a obtenção de recursos, mas ignora a proibição expressa do Art. 199, § 2º da CF/88, que limita a destinação de recursos públicos a entidades sem fins lucrativos. O raciocínio é claro, mas não totalmente coerente com a legislação aplicável."
-      }
+        "total": 7.0,
+        "normalized": 0.6364,
+        "justification": "A resposta do candidato apresenta uma argumentação válida sobre a possibilidade de obtenção de recursos, mas não considera a proibição expressa do Art. 199, § 2º da CF/88, que limita a destinação de recursos públicos a entidades sem fins lucrativos. O raciocínio é claro, mas não totalmente completo em relação à questão central."
+      },
+      "question_id": "41_direito_constitucional_questao_4_turn_1",
+      "category": "Direito Constitucional"
     },
     {
       "citation_f1": {
@@ -3079,8 +3343,10 @@
         "citations": 4.0,
         "total": 11.0,
         "normalized": 1.0,
-        "justification": "A resposta do candidato está correta, completa e bem fundamentada, apresentando a divisão das classes de credores de acordo com a Lei nº 11.101/2005. O raciocínio é claro e estruturado, embora pudesse ser mais detalhado em relação à importância da proteção dos direitos de cada classe."
-      }
+        "justification": "A resposta do candidato está correta, completa e bem fundamentada, apresentando a divisão das classes de credores de acordo com a Lei nº 11.101/2005. O raciocínio é claro e estruturado, embora pudesse ser um pouco mais detalhado na explicação da importância da divisão das classes."
+      },
+      "question_id": "41_direito_empresarial_questao_1_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -3102,8 +3368,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato apresenta a regra geral de aprovação do plano de recuperação judicial, mas não menciona a distinção entre as classes de credores e a necessidade de maioria simples para as classes I e IV, o que a torna incompleta. As citações legais são corretas, mas faltam complementos que poderiam enriquecer a fundamentação."
-      }
+        "justification": "A resposta do candidato apresenta a lógica de votação correta, mas não menciona a distinção entre as classes de credores e a necessidade de maioria simples para as classes I e IV, o que a torna incompleta. As citações legais estão corretas, mas faltam complementos que poderiam enriquecer a fundamentação."
+      },
+      "question_id": "41_direito_empresarial_questao_1_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -3125,8 +3393,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que a designação de administrador pode ser feita em ato separado, mas poderia ser mais clara na explicação das formalidades necessárias. As citações legais são adequadas, mas faltaram complementos que poderiam enriquecer a argumentação."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a designação de administrador pode ser feita em ato separado, mas poderia ser mais clara na explicação das formalidades necessárias. As citações legais são pertinentes, mas faltam alguns detalhes que poderiam enriquecer a argumentação."
+      },
+      "question_id": "41_direito_empresarial_questao_2_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -3148,8 +3418,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao abordar a aceitação expressa e a formalização da designação, mas poderia ser mais precisa ao mencionar o termo de posse no livro de atas, conforme o Art. 1.062 do Código Civil. O raciocínio é claro, mas não segue uma estrutura formal como IRAC."
-      }
+        "justification": "A resposta do candidato está correta ao afirmar que a investidura ocorre com a aceitação expressa e formalização da designação, mas não menciona explicitamente o termo de posse no livro de atas, que é um ponto crucial. As citações legais são adequadas, mas poderiam ser mais completas."
+      },
+      "question_id": "41_direito_empresarial_questao_2_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -3171,8 +3443,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a exigência de integralização das cotas em caso de insuficiência de ativo. O raciocínio é claro e estruturado, embora pudesse ser mais detalhado. A citação do artigo 1.052, § 2º, é correta, mas faltou mencionar o artigo 1.103, que também é relevante para a questão."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a exigência de integralização das cotas em caso de insuficiência do ativo. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado. A citação do artigo 1.052, § 2º, é correta, mas faltou mencionar o contexto da liquidação e a referência ao artigo 1.103 do CC."
+      },
+      "question_id": "41_direito_empresarial_questao_3_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -3194,8 +3468,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao abordar o dever do liquidante e a necessidade de garantir o pagamento aos credores, mas poderia ser mais clara na estruturação do raciocínio. As citações legais são adequadas, mas faltaram alguns detalhes sobre os artigos mencionados."
-      }
+        "justification": "A resposta do candidato está correta e completa ao abordar o dever do liquidante e a necessidade de garantir o pagamento aos credores, mas poderia ser mais precisa em relação à apresentação do relatório final. As citações legais são adequadas, mas faltam alguns detalhes sobre os artigos mencionados."
+      },
+      "question_id": "41_direito_empresarial_questao_3_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -3217,8 +3493,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato é correta e completa ao afirmar que a autarquia pode requerer o registro da marca, mas poderia ser mais clara na explicação sobre a relação entre a criação do sinal e os direitos autorais. As citações legais são pertinentes, mas faltam detalhes sobre os dispositivos mencionados."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que a autarquia pode requerer o registro da marca, mas poderia ser mais clara na explicação sobre a relação entre a criação do sinal e os direitos autorais. As citações legais são pertinentes, mas faltam detalhes sobre os dispositivos mencionados."
+      },
+      "question_id": "41_direito_empresarial_questao_4_turn_0",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -3240,8 +3518,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato está correta ao afirmar que a propriedade da marca é adquirida por registro no INPI e que o titular deve ser a entidade responsável pela certificação, mas não menciona o artigo específico da Lei nº 9.279/1996. O raciocínio é claro, mas poderia ser mais estruturado."
-      }
+        "justification": "A resposta do candidato está correta ao afirmar que a propriedade da marca é adquirida por registro no INPI e que o titular deve ser a entidade responsável pela certificação. No entanto, a falta de citação do artigo específico da Lei nº 9.279/1996 e a explicação sobre o efeito da marca poderiam ser mais detalhadas."
+      },
+      "question_id": "41_direito_empresarial_questao_4_turn_1",
+      "category": "Direito Empresarial"
     },
     {
       "citation_f1": {
@@ -3264,7 +3544,9 @@
         "total": 4.0,
         "normalized": 0.3636,
         "justification": "A resposta do candidato apresenta uma argumentação válida sobre a preclusão, mas não aborda corretamente a questão do cabimento do recurso ordinário constitucional, que é o ponto central da questão. Além disso, não há citações legais que sustentem a argumentação apresentada."
-      }
+      },
+      "question_id": "41_direito_penal_questao_1_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -3286,8 +3568,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato apresenta a tese da vedação à reformatio in pejus corretamente, mas a fundamentação poderia ser mais aprofundada. As citações legais estão corretas, mas a menção ao princípio da legalidade, embora pertinente, não é essencial para a tese principal."
-      }
+        "justification": "A resposta do candidato apresenta a tese da vedação à reformatio in pejus de forma correta e fundamentada, mas não aborda a questão da súmula do STF, o que a torna incompleta. As citações legais estão corretas, mas poderiam ser mais precisas ao incluir a referência à súmula mencionada na resposta de referência."
+      },
+      "question_id": "41_direito_penal_questao_1_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -3309,8 +3593,10 @@
         "citations": 4.0,
         "total": 11.0,
         "normalized": 1.0,
-        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando a audiência de custódia como a primeira oportunidade para a defesa, além de mencionar a possibilidade de medidas cautelares alternativas. As citações legais estão corretas e completas, referindo-se ao Art. 310 e Art. 319 do CPP."
-      }
+        "justification": "A resposta do candidato está correta, completa e bem fundamentada, abordando a audiência de custódia como a primeira oportunidade para a defesa. As citações legais estão corretas e completas, referindo-se ao Art. 310 e Art. 319 do CPP."
+      },
+      "question_id": "41_direito_penal_questao_2_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -3329,11 +3615,13 @@
       "llm_judge": {
         "correctness": 4.0,
         "reasoning": 3.0,
-        "citations": 3.0,
-        "total": 10.0,
-        "normalized": 0.9091,
-        "justification": "A resposta do candidato apresenta uma tese de atipicidade da conduta bem fundamentada, alinhada com a resposta de referência, embora as citações de jurisprudência poderiam ser mais precisas e relevantes. O raciocínio é claro e estruturado, mas poderia ser mais aprofundado."
-      }
+        "citations": 2.0,
+        "total": 9.0,
+        "normalized": 0.8182,
+        "justification": "A resposta do candidato apresenta uma tese de atipicidade da conduta bem fundamentada, mas as citações de jurisprudência, embora relevantes, não são precisas e não se referem a casos concretos que reforcem a argumentação."
+      },
+      "question_id": "41_direito_penal_questao_2_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -3355,8 +3643,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato apresenta a tese de atipicidade da conduta de forma correta e fundamentada, mas poderia ser mais completa ao abordar a questão do perigo concreto de forma mais detalhada. A citação do artigo 133, § 3º, II, do CP está correta, mas faltou mencionar a necessidade de risco iminente de lesão à integridade física da criança."
-      }
+        "justification": "A resposta do candidato apresenta a tese de atipicidade da conduta de forma correta e fundamentada, mas poderia ser mais completa ao abordar a questão do risco concreto de forma mais detalhada. As citações legais estão corretas, mas faltam complementos que poderiam enriquecer a argumentação."
+      },
+      "question_id": "41_direito_penal_questao_3_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -3378,8 +3668,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato aborda corretamente a violação do princípio da correlação entre acusação e sentença, mas poderia ser mais completa ao mencionar o procedimento do Art. 384 do CPP. As citações legais estão corretas, mas faltam complementos que poderiam fortalecer a argumentação."
-      }
+        "justification": "A resposta do candidato aborda corretamente a violação do princípio do contraditório e da ampla defesa, mas poderia ser mais completa ao mencionar especificamente o Art. 384 do CPP, que é central para a tese. As citações legais estão corretas, mas faltam complementos que poderiam fortalecer a argumentação."
+      },
+      "question_id": "41_direito_penal_questao_3_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -3401,8 +3693,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando o princípio da personalidade da pena e a extinção da punibilidade com a morte do condenado. O raciocínio é claro e estruturado, embora pudesse ser mais detalhado em alguns aspectos."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando o princípio da personalidade da pena e a extinção da punibilidade com a morte do condenado. O raciocínio é claro e estruturado, embora pudesse ser ainda mais detalhado em alguns aspectos."
+      },
+      "question_id": "41_direito_penal_questao_4_turn_0",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -3419,13 +3713,15 @@
         "f1": 0.6012
       },
       "llm_judge": {
-        "correctness": 3.0,
-        "reasoning": 2.0,
+        "correctness": 4.0,
+        "reasoning": 3.0,
         "citations": 3.0,
-        "total": 8.0,
-        "normalized": 0.7273,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que Janaína pode propor revisão criminal e que a obrigação de pagamento da prestação pecuniária cessa com a morte do condenado. No entanto, poderia ter aprofundado mais sobre os requisitos da revisão criminal e a fundamentação legal específica."
-      }
+        "total": 10.0,
+        "normalized": 0.9091,
+        "justification": "A resposta do candidato está correta e completa ao identificar a legitimidade de Janaína para propor revisão criminal e a extinção da obrigação de pagamento da prestação pecuniária com a morte do condenado. O raciocínio é claro, mas poderia ser mais estruturado. As citações legais são corretas, mas faltaram complementos que poderiam enriquecer a resposta."
+      },
+      "question_id": "41_direito_penal_questao_4_turn_1",
+      "category": "Direito Penal"
     },
     {
       "citation_f1": {
@@ -3447,8 +3743,10 @@
         "citations": 2.0,
         "total": 9.0,
         "normalized": 0.8182,
-        "justification": "A resposta do candidato está correta e completa ao afirmar que Jandira tem direito ao RSR à parte, mas poderia ter citado a legislação específica, como a Lei nº 605/1949 ou a Súmula 27 do TST, para fundamentar melhor sua argumentação."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que Jandira tem direito ao RSR à parte, mas poderia ter mencionado explicitamente a legislação pertinente, como a Lei nº 605/1949 ou a Súmula 27 do TST, para uma fundamentação mais robusta."
+      },
+      "question_id": "41_direito_do_trabalho_questao_1_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -3470,8 +3768,10 @@
         "citations": 4.0,
         "total": 11.0,
         "normalized": 1.0,
-        "justification": "A resposta do candidato está correta e completa, abordando a rescisão indireta com base no descumprimento do FGTS e incluindo a solicitação de verbas rescisórias. O raciocínio é bem estruturado, embora pudesse ser mais detalhado na explicação dos direitos envolvidos."
-      }
+        "justification": "A resposta do candidato está correta e completa, abordando a rescisão indireta com base no descumprimento do FGTS e detalhando os direitos a serem pleiteados. O raciocínio é bem estruturado, embora pudesse ser mais claro em alguns pontos."
+      },
+      "question_id": "41_direito_do_trabalho_questao_1_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -3493,8 +3793,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato está correta ao afirmar que o plano de saúde não integra a base de cálculo, mas poderia ter mencionado a previsão legal específica do Art. 458 da CLT. O raciocínio é claro, mas não segue uma estrutura formal como IRAC, e as citações legais são relevantes, mas não completas."
-      }
+        "justification": "A resposta do candidato está correta e completa ao afirmar que o plano de saúde não integra a base de cálculo, mas poderia ter mencionado explicitamente o artigo da CLT que fundamenta essa afirmação. O raciocínio é claro, mas poderia ser mais estruturado."
+      },
+      "question_id": "41_direito_do_trabalho_questao_2_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -3516,8 +3818,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato apresenta medidas judiciais adequadas, mas não menciona a suspensão do contrato de trabalho conforme a Súmula 440 do TST, o que é crucial. As citações legais são relevantes, mas a fundamentação poderia ser mais robusta."
-      }
+        "justification": "A resposta do candidato apresenta medidas judiciais adequadas, mas não menciona a suspensão do contrato de trabalho conforme a Súmula 440 do TST, o que compromete a completude da resposta. As citações legais são relevantes, mas a referência à Súmula 448 do TST é inadequada, pois a correta seria a 440."
+      },
+      "question_id": "41_direito_do_trabalho_questao_2_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -3539,8 +3843,10 @@
         "citations": 3.0,
         "total": 8.0,
         "normalized": 0.7273,
-        "justification": "A resposta do candidato apresenta a medida correta de impugnação da suspeição do juiz, mas faz referência ao CPC em vez da CLT, o que gera uma pequena inconsistência. O raciocínio é claro, mas poderia ser mais estruturado."
-      }
+        "justification": "A resposta do candidato apresenta a medida correta de impugnação da suspeição do juiz, mas faz referência ao CPC em vez da CLT, o que gera uma pequena inadequação na fundamentação. A citação dos artigos é pertinente, mas poderia ser mais precisa em relação à legislação trabalhista."
+      },
+      "question_id": "41_direito_do_trabalho_questao_3_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -3563,7 +3869,9 @@
         "total": 10.0,
         "normalized": 0.9091,
         "justification": "A resposta do candidato está correta e completa ao indicar a ação rescisória como medida adequada, fundamentando-se na suspeição do juiz. A citação do artigo 966, VII, do CPC é pertinente, embora pudesse ser mais detalhada."
-      }
+      },
+      "question_id": "41_direito_do_trabalho_questao_3_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -3585,8 +3893,10 @@
         "citations": 2.0,
         "total": 7.0,
         "normalized": 0.6364,
-        "justification": "A resposta do candidato apresenta uma tese correta e completa, mas não menciona a Súmula 331 do TST, que é fundamental para a argumentação. O raciocínio é claro, mas poderia ser mais estruturado em relação aos fundamentos legais."
-      }
+        "justification": "A resposta do candidato apresenta uma tese correta e bem fundamentada, mas não menciona a Súmula 331 do TST, que é essencial para a argumentação sobre a responsabilidade subsidiária. O raciocínio é claro, mas poderia ser mais estruturado."
+      },
+      "question_id": "41_direito_do_trabalho_questao_4_turn_0",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -3608,8 +3918,10 @@
         "citations": 2.0,
         "total": 6.0,
         "normalized": 0.5455,
-        "justification": "A resposta do candidato apresenta uma análise correta, mas incompleta, pois sugere recursos inadequados e não menciona o agravo de petição, que é a providência correta. As citações legais são relevantes, mas não estão completas, faltando a referência ao dispositivo específico da CLT que trata do agravo de petição."
-      }
+        "justification": "A resposta do candidato apresenta uma análise correta, mas incompleta, pois sugere recursos inadequados e não menciona o agravo de petição, que é a providência correta. As citações legais são relevantes, mas não são suficientemente precisas ou completas."
+      },
+      "question_id": "41_direito_do_trabalho_questao_4_turn_1",
+      "category": "Direito Do Trabalho"
     },
     {
       "citation_f1": {
@@ -3631,8 +3943,10 @@
         "citations": 2.0,
         "total": 5.0,
         "normalized": 0.4545,
-        "justification": "A resposta do candidato apresenta uma interpretação errônea ao afirmar que apenas o acréscimo de 1/3 está isento, enquanto a jurisprudência e a legislação indicam que as férias e seus acréscimos têm caráter indenizatório e não devem ser tributados. O raciocínio é claro, mas a conclusão está incorreta."
-      }
+        "justification": "A resposta do candidato apresenta uma interpretação errônea ao afirmar que apenas o acréscimo de 1/3 está isento, desconsiderando o caráter indenizatório das férias. O raciocínio é claro, mas a fundamentação jurídica é insuficiente e imprecisa."
+      },
+      "question_id": "41_direito_tributario_questao_1_turn_0",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -3654,8 +3968,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a não incidência do IRRF sobre danos morais e citando a legislação pertinente, embora a citação do artigo poderia ser mais precisa ao incluir o parágrafo."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a não incidência do IRRF sobre danos morais e citando a legislação pertinente, embora a citação do artigo poderia ser mais precisa ao incluir o parágrafo mencionado."
+      },
+      "question_id": "41_direito_tributario_questao_1_turn_1",
+      "category": "Direito Tributario"
     },
     {
       "citation_f1": {
@@ -3677,8 +3993,10 @@
         "citations": 3.0,
         "total": 10.0,
         "normalized": 0.9091,
-        "justification": "A resposta do candidato está correta e bem fundamentada, abordando adequadamente a questão da anterioridade tributária e a autonomia municipal. As citações legais são pertinentes, embora a referência ao Art. 88 do ADCT não seja necessária para a questão específica."
-      }
+        "justification": "A resposta do candidato está correta e bem fundamentada, abordando a questão da anterioridade tributária e a autonomia municipal. As citações legais são pertinentes, embora a referência ao ADCT poderia ser mais precisa."
+      },
+      "question_id": "41_direito_tributario_questao_3_turn_1",
+      "category": "Direito Tributario"
     }
   ]
 }

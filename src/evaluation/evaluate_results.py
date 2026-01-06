@@ -87,6 +87,10 @@ def evaluate_experiment(
                 )
                 metrics['llm_judge'] = llm_scores
 
+            # Preserve metadata for per-category analysis
+            metrics['question_id'] = result.get('question_id', '')
+            metrics['category'] = result.get('category', '')
+
             all_metrics.append(metrics)
         except Exception as e:
             print(f"\nWarning: Error evaluating {result.get('question_id', 'unknown')}: {e}")
